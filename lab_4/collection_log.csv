@@ -1,0 +1,11 @@
+iteration,elements_on_page,new_records,total,duration_sec,url,timestamp
+1,10,10,10,0.016,https://quotes.toscrape.com/js/,2026-10-13 20:32:36
+2,10,10,20,0.008,https://quotes.toscrape.com/js/page/2/,2026-10-13 20:32:37
+3,10,10,30,0.004,https://quotes.toscrape.com/js/page/3/,2026-10-13 20:32:38
+4,10,10,40,0.005,https://quotes.toscrape.com/js/page/4/,2026-10-13 20:32:40
+5,10,10,50,0.005,https://quotes.toscrape.com/js/page/5/,2026-10-13 20:32:41
+6,10,10,60,0.004,https://quotes.toscrape.com/js/page/6/,2026-10-13 20:32:42
+7,10,10,70,0.003,https://quotes.toscrape.com/js/page/7/,2026-10-13 20:32:43
+8,10,10,80,0.004,https://quotes.toscrape.com/js/page/8/,2026-10-13 20:32:45
+9,10,10,90,0.005,https://quotes.toscrape.com/js/page/9/,2026-10-13 20:32:47
+10,10,10,100,0.007,https://quotes.toscrape.com/js/page/10/,2026-10-13 20:32:48
