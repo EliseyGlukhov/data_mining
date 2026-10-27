@@ -1,0 +1,501 @@
+﻿issue_id,issue_state,issue_created_at,issue_closed_at,lifetime_hours,issue_title
+1,closed,2010-09-29T00:45:31Z,2011-02-19T23:13:48Z,3455,Enable element-wise comparison operations in DataMatrix objects
+2,closed,2010-09-29T00:50:13Z,2010-12-17T02:57:33Z,1899,reindex_like function
+3,closed,2010-09-29T00:50:52Z,2011-01-01T23:50:12Z,2279,Binary operations on int DataMatrix
+4,closed,2010-09-29T00:51:27Z,2010-12-11T06:14:32Z,1758,Plot keyword arguments are unused in DataFrame plot()
+5,closed,2010-09-29T00:57:00Z,2010-12-17T02:46:34Z,1898,Python 2.7 testing
+6,closed,2010-09-29T05:30:56Z,2010-12-11T06:05:26Z,1753,Fix argument inconsistency in pandas.stats.moments exp-weighted functions
+7,closed,2010-09-29T15:41:55Z,2010-12-11T06:12:00Z,1743,DataMatrix constructor ignores dtype argument if data is a DataMatrix
+8,closed,2010-09-29T19:45:47Z,2011-06-23T04:50:05Z,6394,np.fix doesn't work
+9,closed,2010-09-30T22:29:36Z,2011-05-18T02:43:33Z,5501,Fix pandas.io.parsers.parseExcel to be more robust / have correct handling of Excel dates
+10,closed,2010-09-30T22:33:14Z,2011-06-23T19:38:51Z,6382,Improvements to pandas.io.pytables / unit testing
+11,closed,2010-09-30T22:34:26Z,2011-02-19T23:46:00Z,3410,"Rename {Series, DataFrame, WidePanel}.fill() to something else"
+12,closed,2010-10-03T17:20:41Z,2010-12-11T22:53:14Z,1662,DataFrame and DataMatrix column ordering
+13,closed,2010-10-07T23:42:34Z,2012-12-12T21:35:57Z,19126,Add PyTable Paths to HDFStore
+14,closed,2010-10-11T03:19:39Z,2011-02-19T16:13:00Z,3157,Make more flexible arithmetic functions in DataFrame/DataMatrix
+15,closed,2010-10-12T16:10:48Z,2010-12-11T06:19:58Z,1431,.apply() API consistency fix
+16,closed,2010-10-12T16:13:04Z,2011-06-23T04:46:14Z,6085,Outlier detection in pandas.stats.moments functions
+17,closed,2010-10-12T16:13:55Z,2011-07-08T22:15:57Z,6463,Better support for mixed-type data
+18,closed,2010-10-12T16:15:10Z,2011-09-25T05:17:23Z,8342,weights option may not be working in pandas.stats.ols.OLS
+19,closed,2010-10-22T17:59:31Z,2011-01-11T03:37:14Z,1930,parseCSV on result of toCSV does not preserve index type
+20,closed,2010-11-19T14:50:11Z,2010-12-17T02:45:20Z,660,Install 0.2beta fail on Debian Lenny / python2.5
+21,closed,2010-11-19T18:41:36Z,2010-11-19T18:42:08Z,1,Consistent column ordering between DataFrame and DataMatrix
+22,closed,2010-12-14T16:50:11Z,2010-12-15T04:07:42Z,12,numpy.dtype size changed runtime warning on XP
+23,closed,2010-12-22T10:37:40Z,2011-01-01T23:16:26Z,253,numpy traceback during easy_install on Debian Lenny
+24,closed,2010-12-24T07:27:52Z,2010-12-24T16:27:12Z,9,Install problems
+25,closed,2010-12-24T07:32:39Z,2010-12-24T21:28:59Z,14,Souce compile errors
+26,closed,2011-01-03T17:15:19Z,2011-01-03T23:23:47Z,7,dtype mismatch when calling .median()
+27,closed,2011-01-03T23:29:47Z,2011-02-20T00:53:44Z,1130,Incorrect T-Stats in FamaMacBeth.py
+28,closed,2011-01-11T04:14:15Z,2011-01-29T19:13:49Z,447,what is the easiest way to plot a timeseries and dataframe?
+29,closed,2011-01-11T12:15:39Z,2011-06-23T04:47:01Z,3905,.asfreq() dies when the index values have tzinfo associated with them
+30,closed,2011-01-11T12:31:34Z,2011-06-14T14:17:06Z,3698,"resource hog -> .asfreq(DateOffset(seconds=1),method='pad')"
+31,closed,2011-01-13T04:05:11Z,2011-02-20T00:07:53Z,909,Is there a single pdf instead of html documentation/help file?
+32,closed,2011-01-18T20:28:41Z,2011-01-20T17:42:12Z,46,Does pandas support piecewise/multi-period regression?
+33,closed,2011-01-22T20:36:36Z,2011-02-20T00:50:55Z,677,NumPy >= 1.4.0 NaN-handling issues
+34,closed,2011-01-24T20:15:05Z,2011-02-20T00:52:36Z,629,"reindex(method=""backfill"") and periods within the last date"
+36,closed,2011-02-25T19:07:03Z,2011-03-02T12:24:08Z,114,Install problems on Windows 7
+39,closed,2011-04-06T00:15:26Z,2014-03-09T15:18:34Z,25648,Adding variable description in DataFrame
+40,closed,2011-05-01T17:31:45Z,2011-06-28T03:09:55Z,1378,Create generic moving window function
+41,closed,2011-05-01T17:32:55Z,2012-01-05T19:04:25Z,5978,Join methods for WidePanel
+42,closed,2011-05-01T17:33:45Z,2011-05-30T22:59:55Z,702,Slice DataMatrix-- get a view
+43,closed,2011-05-01T17:58:10Z,2011-06-23T04:47:33Z,1259,HDFStore testing and improvements
+44,closed,2011-05-06T10:38:14Z,2011-05-06T19:13:40Z,9,All days instead of business days?
+45,closed,2011-05-20T22:13:31Z,2011-06-23T04:17:27Z,799,"Importing data using HDFStore with pre-epoch dates; ""ValueError: timestamp out of range for platform localtime()/gmtime() function"""
+46,closed,2011-05-31T16:51:22Z,2011-06-28T00:41:31Z,656,Configure pandas like pyzmq so checking in .c files is not necessary
+47,closed,2011-06-03T08:53:52Z,2011-06-14T14:43:51Z,270,"Time zone handling in DateRange, etc. using pytz"
+48,closed,2011-06-03T09:08:28Z,2011-06-14T14:06:41Z,269,"""Proper"" boolean array with NA handling in DataMatrix"
+49,closed,2011-06-03T09:10:29Z,2011-06-14T14:06:14Z,269,Consistent column ordering in mixed-type DataMatrix
+50,closed,2011-06-03T10:50:07Z,2012-07-12T16:51:03Z,9727,Better implementation of rolling_max and min
+51,closed,2011-06-21T14:09:06Z,2011-06-21T14:38:23Z,1,"examples not running, error in documentation"
+52,closed,2011-06-21T15:49:54Z,2011-06-23T04:16:33Z,37,Improve fancy indexing when selecting cross-sections
+53,closed,2011-06-23T04:45:51Z,2011-06-23T19:39:40Z,15,Optimized DataFrame.append for block structure if possible
+54,closed,2011-06-27T17:53:51Z,2011-06-27T23:06:24Z,6,fillna bug on ordered string data
+55,closed,2011-06-29T00:59:24Z,2011-06-29T02:06:48Z,2,Minor change to CleanCommand so build works with stdeb
+56,closed,2011-07-05T19:50:00Z,2011-07-08T21:07:28Z,74,Some reverse binary operations fail with dtype=object
+57,closed,2011-07-14T16:28:06Z,2011-07-14T16:46:35Z,1,fillna bug
+58,closed,2011-07-15T04:51:09Z,2011-07-15T06:54:06Z,3,setup.py
+59,closed,2011-07-15T21:18:40Z,2011-07-15T23:44:55Z,3,Use Pdb.runcall() in debug()
+60,closed,2011-07-15T23:11:41Z,2014-07-30T01:12:20Z,26643,Easier subclassing
+61,closed,2011-07-18T02:15:11Z,2011-07-20T19:46:25Z,66,DataFrame.__ne__ not implemented
+62,closed,2011-07-18T15:37:26Z,2011-10-02T02:56:19Z,1812,Add na_omit options to aggregation functions
+63,closed,2011-07-18T15:37:46Z,2012-04-12T03:17:15Z,6444,Unit testing / cleanup of pandas.io.sql
+64,closed,2011-07-18T15:39:18Z,2012-04-05T00:31:26Z,6273,numpy.datetime64 type integration
+65,closed,2011-07-18T15:43:35Z,2011-11-10T04:08:23Z,2749,Add dot method to DataFrame
+66,closed,2011-07-18T15:45:19Z,2011-07-30T18:02:16Z,291,Fancy indexing on single column of DataFrame
+67,closed,2011-07-18T15:46:39Z,2011-10-02T03:26:44Z,1812,Reindexing Cython code cleanup
+68,closed,2011-07-18T15:47:17Z,2011-11-06T01:46:48Z,2650,Import plyr-like functionality
+69,closed,2011-07-18T15:48:30Z,2011-09-08T16:42:07Z,1249,Fancy indexing on WidePanel and n-dimensional version
+70,closed,2011-07-18T15:49:35Z,2011-07-20T19:47:04Z,52,Implement DataFrame.insert method
+71,closed,2011-07-18T15:50:10Z,2011-07-20T19:45:42Z,52,Enable DataFrame constructor to accept structured/record ndarray
+72,closed,2011-07-18T15:52:21Z,2011-09-08T16:39:40Z,1249,Enable reindex methods to optionally not copy data when they can
+73,closed,2011-07-18T15:54:10Z,2011-10-14T22:18:03Z,2119,Enable Series objects to optionally have a name associated with them
+74,closed,2011-07-18T15:54:45Z,2011-09-08T16:39:18Z,1249,Test coverage for pandas.stats subpackage
+75,closed,2011-07-18T16:02:37Z,2011-08-11T04:12:54Z,565,Heterogeneous type handling in LongPanel
+76,closed,2011-07-18T21:00:39Z,2011-07-20T03:52:38Z,31,Sparse cumsum functions do not work
+77,closed,2011-07-21T19:32:25Z,2011-10-02T02:55:40Z,1736,Build error on OS X 10.7: tseries
+78,closed,2011-07-24T20:08:48Z,2011-09-08T16:38:54Z,1101,Create HierarchicalIndex object to implement multi-level indexing
+79,closed,2011-07-26T01:42:29Z,2011-07-26T02:00:58Z,1,groupby.pyx
+80,closed,2011-07-26T15:41:00Z,2011-08-07T16:16:36Z,289,Some test data files don't get copied to site-packages
+81,closed,2011-07-27T23:02:15Z,2011-07-31T16:23:24Z,90,bug in DataFrame/DataMatrix toCSV method when index=False
+82,closed,2011-07-28T15:04:34Z,2011-07-28T15:20:01Z,1,ImportError: No module named tseries
+83,closed,2011-07-29T15:53:40Z,2011-07-30T16:58:47Z,26,[suggestion] example for pandas.DataFrame.pivot
+84,closed,2011-07-29T16:26:50Z,2012-04-05T00:31:20Z,6009,Create memory-efficient DateIndex
+85,closed,2011-07-29T22:19:39Z,2012-05-07T15:05:18Z,6785,Enable pandas.core.sparse objects to be stored in HDFStore
+86,closed,2011-07-30T01:01:42Z,2012-01-13T21:17:59Z,4029,Push some of Series.ix into Series.__getitem__/__setitem__
+87,closed,2011-08-01T20:13:57Z,2011-08-07T19:31:13Z,144,[question] possible to use compound logic in indexing
+88,closed,2011-08-05T15:46:35Z,2011-09-08T16:38:37Z,817,"Document panel {sum, mean, ...} methods"
+89,closed,2011-08-06T08:02:19Z,2011-08-07T16:15:41Z,33,Fix for issue #80
+90,closed,2011-08-07T02:54:27Z,2011-08-07T05:01:23Z,3,build error on linux: common.pyx
+91,closed,2011-08-07T19:42:03Z,2012-01-12T01:03:28Z,3774,Change sum/mean/count/std/var/etc. to use bottleneck if available
+92,closed,2011-08-07T20:57:42Z,2011-11-13T18:28:29Z,2350,Enable DataFrame to be sorted by multiple columns
+93,closed,2011-08-07T21:01:30Z,2011-12-16T01:32:07Z,3125,Improve Cython multi-groupby code to do aggregation without having to sort the data
+94,closed,2011-08-07T21:08:46Z,2011-09-08T16:41:30Z,764,Make DataFrame toString formatting use precision set in numpy.set_printoptions
+95,closed,2011-08-09T02:25:36Z,2011-08-19T20:11:26Z,258,Implement GroupBy __len__ to return number of resulting groups
+96,closed,2011-08-09T17:29:47Z,2011-09-05T20:28:06Z,651,Write Cython function to determine sort order in hierarchical indexes
+97,closed,2011-08-09T18:25:40Z,2011-08-09T18:32:55Z,1,Problem with Series.plot
+98,closed,2011-08-09T20:53:42Z,2011-08-09T22:54:57Z,3,Calling xs on DataFrame with index but no columns raises Exception
+99,closed,2011-08-09T22:51:30Z,2011-08-19T20:11:52Z,238,Bring back .groups attribute for GroupBy
+100,closed,2011-08-10T00:51:55Z,2011-08-19T20:12:50Z,236,Remove AmbiguousIndexError in fancy indexing
+101,closed,2011-08-15T17:36:34Z,2011-08-16T17:41:19Z,25,Enable .drop(...) to work with MultiIndex
+102,closed,2011-08-16T18:51:21Z,2011-08-16T19:01:47Z,1,pandas.stats.interface.ols broken in 0.4 from 0.3
+103,closed,2011-08-17T19:04:13Z,2011-11-13T01:11:31Z,2095,Enable groupby multiple levels (instead of just a single level)
+104,closed,2011-08-18T21:48:22Z,2011-09-29T04:22:46Z,991,Implement ndarray.take analog on BlockManager
+105,closed,2011-08-19T08:20:15Z,2011-08-19T20:25:29Z,13,README updated for better Github output
+106,closed,2011-08-19T17:04:42Z,2011-08-23T02:20:04Z,82,ols should handle a Series (w/ MultiIndex) + LongPanel combo.
+107,closed,2011-08-22T00:39:43Z,2011-09-05T20:23:29Z,356,Partial fancy indexing using ints does not work on MultiIndex
+108,closed,2011-08-24T03:45:52Z,2011-12-29T05:21:19Z,3050,Does LongPanel need to exist?
+109,closed,2011-08-24T19:15:09Z,2011-11-10T04:08:42Z,1857,Enable sum/mean/std etc. on DataFrame to work on multi-level data
+110,closed,2011-08-24T19:23:32Z,2011-12-02T22:02:04Z,2403,"Review DataFrame.{sum,mean,min,max,product,std,...} for behavior in the all-NA case"
+111,closed,2011-08-25T18:46:29Z,2011-09-08T16:41:46Z,334,"Store level naming information in MultiIndex, for groupby, cross-tabulation, etc."
+112,closed,2011-08-25T18:48:29Z,2011-09-06T04:14:42Z,274,.stack() does not yet work when MultiIndex already present
+113,closed,2011-08-25T18:49:08Z,2012-09-18T13:27:30Z,9355,Enhance droplevel integration when MultiIndex present
+114,closed,2011-08-25T18:49:39Z,2011-12-13T00:55:45Z,2623,"Implement ""margins"" for pivot table / cross-tabulation support"
+115,closed,2011-08-28T00:16:21Z,2012-01-05T22:02:32Z,3142,Enable .join methods for DataFrame / WidePanel to join multiple objects at once
+116,closed,2011-08-30T19:10:00Z,2011-09-15T04:25:17Z,370,baseball.csv
+117,closed,2011-08-30T20:09:28Z,2011-09-13T00:03:55Z,316,Added baseball.csv
+118,closed,2011-09-01T19:48:56Z,2011-09-09T01:53:51Z,175,Implement fancy indexing on WidePanel
+119,closed,2011-09-01T19:50:13Z,2011-09-08T02:01:25Z,151,Rename WidePanel to simply Panel
+120,closed,2011-09-02T20:11:06Z,2011-09-05T20:39:52Z,73,Sortedness problems with MultiIndex
+121,closed,2011-09-02T20:15:36Z,2011-09-05T20:18:30Z,73,Write / integrate Cython sortedness check in MultiIndex
+122,closed,2011-09-03T22:51:01Z,2011-10-02T02:57:22Z,677,Implement faster IntIndex class
+123,closed,2011-09-04T02:07:02Z,2016-01-14T21:28:48Z,38252,"Enable groupby to be used on ndarrays, record arrays"
+124,closed,2011-09-05T20:00:39Z,2011-09-05T20:17:56Z,1,Get view when selecting from hierarchical columns in DataFrame
+125,closed,2011-09-05T22:07:23Z,2011-10-02T02:54:19Z,629,Enable shallow copy of BlockManager
+126,closed,2011-09-06T15:20:44Z,2011-09-08T03:57:15Z,37,Add add_prefix/suffix methods to DataFrame
+127,closed,2011-09-06T15:48:58Z,2011-09-06T15:52:20Z,1,timeRule -> time_rule renaming + deprecation warnings
+128,closed,2011-09-06T17:23:12Z,2011-09-08T03:07:23Z,34,Objects with hierarchical index cannot be saved using HDFStore
+129,closed,2011-09-07T02:04:13Z,2011-09-07T20:15:43Z,19,"Added function to pull data from Yahoo! finance, FRED, and Ken French's website."
+130,closed,2011-09-08T18:10:15Z,2011-09-09T05:03:47Z,11,ENH: Add join to Panel
+131,closed,2011-09-08T22:32:28Z,2011-09-09T03:07:28Z,5,GroupBy.apply can't yield Series with DataFrame input
+132,closed,2011-09-08T22:34:50Z,2011-09-09T04:47:36Z,7,"Enable GroupBy agg/transform/apply to take *args, **kwargs"
+133,closed,2011-09-09T02:27:47Z,2011-09-09T02:55:30Z,1,Multi-key groupby fails with multiple functions
+134,closed,2011-09-13T01:27:21Z,2012-03-13T22:15:52Z,4389,Partial multiple selection in advanced indexing
+135,closed,2011-09-13T01:30:09Z,2011-09-20T16:30:48Z,184,Setting single column in mixed type frame throws exception
+136,closed,2011-09-13T15:37:44Z,2011-09-17T01:35:07Z,82,minor: just removed pasting of import of datetime into version.py
+137,closed,2011-09-13T21:08:05Z,2011-09-17T01:31:25Z,77,Enh tests compat pytables 2.1
+138,closed,2011-09-14T16:26:08Z,2011-09-22T13:45:44Z,190,DataFrame repr fails if a column contains tuples
+139,closed,2011-09-14T18:29:55Z,2011-09-14T18:38:51Z,1,Removed warnings when compiling using MSVC/Mingw under 64bit Windows
+140,closed,2011-09-14T21:43:18Z,2011-09-17T01:41:13Z,52,ENH: Add panel_index convenience function
+141,closed,2011-09-14T23:17:01Z,2011-09-17T01:47:28Z,51,ENH: Allow to sort on index level by name
+142,closed,2011-09-14T23:59:36Z,2011-09-17T01:52:24Z,50,ENH: Allow unstacking by level name
+143,closed,2011-09-15T00:39:50Z,2011-09-22T14:21:58Z,182,DataFrame.to_csv bug: headers mis-aligned
+144,closed,2011-09-16T03:21:33Z,2011-09-22T15:59:55Z,157,DataFrame.corrwith fails with object columns
+145,closed,2011-09-16T03:21:44Z,2011-09-29T01:16:20Z,310,Add dtypes property to DataFrame
+146,closed,2011-09-16T09:32:28Z,2011-09-17T01:44:08Z,17,Minor change to csv reading
+147,closed,2011-09-17T01:19:26Z,2011-09-20T15:38:48Z,87,Sortlevel / pivot may silently misalign data with duplicate labels
+148,closed,2011-09-17T06:20:10Z,2011-09-18T02:47:20Z,21,Failing Test on Ambiguous Date/Time on Ubuntu 10.04
+149,closed,2011-09-17T06:20:52Z,2011-09-22T13:16:22Z,127,Failing test on OLS on Ubuntu 10.04
+150,closed,2011-09-17T14:52:11Z,2011-09-25T21:39:33Z,199,Document swaplevel method
+151,closed,2011-09-17T17:56:07Z,2011-09-22T14:03:03Z,117,ENH: improve DataFrame read_csv / to_csv for Index/MultiIndex
+152,closed,2011-09-17T21:36:13Z,2012-04-06T03:31:01Z,4830,Write fast OHLC aggregator
+153,closed,2011-09-17T21:37:07Z,2012-05-01T18:56:10Z,5446,"Implement custom ""grouper"" class"
+154,closed,2011-09-17T21:37:51Z,2011-09-20T15:52:17Z,67,Series.shift fails on integer arrays due to NaN handling
+155,closed,2011-09-18T01:44:00Z,2011-10-14T04:39:36Z,627,Weights option should be removed in OLS classes
+156,closed,2011-09-18T22:18:44Z,2012-02-09T16:26:14Z,3451,Integrate openpyxl into pandas.io.parsers
+157,closed,2011-09-18T23:43:14Z,2011-10-02T02:47:02Z,316,Implement optimized DataFrame.join and reindex methods for ordered time series data
+158,closed,2011-09-19T18:11:17Z,2011-12-12T20:00:13Z,2018,Implement no copy item deletion in BlockManager
+159,closed,2011-09-19T23:09:12Z,2012-03-13T20:41:30Z,4222,Add level keyword to .drop method
+160,closed,2011-09-20T01:05:12Z,2011-09-22T15:22:03Z,63,as_index in GroupBy does not work properly with a single key
+161,closed,2011-09-20T15:55:00Z,2011-10-22T03:17:52Z,756,Document combine_first and any related methods
+162,closed,2011-09-21T16:03:43Z,2014-04-25T14:26:32Z,22727,Speed optimization: Block do not use their own Index objects
+163,closed,2011-09-21T16:05:33Z,2016-01-14T21:29:18Z,37830,Move Block internals code to Cython
+164,closed,2011-09-22T14:05:38Z,2011-11-07T05:28:11Z,1096,Add name/names field to Index and integrate
+165,closed,2011-09-22T14:25:21Z,2011-09-25T21:47:27Z,80,Document CSV/table -> DataFrame with MultiIndex
+166,closed,2011-09-22T15:05:29Z,2012-01-12T02:32:02Z,2676,Implement multiple-function aggregation with DataFrame in groupby
+167,closed,2011-09-22T15:09:54Z,2014-06-03T01:13:17Z,23627,Possible interactions with taldcroft/asciitable?
+168,closed,2011-09-22T19:41:56Z,2011-09-25T05:16:37Z,58,DateRange.copy bug
+169,closed,2011-09-23T18:56:20Z,2011-09-25T04:55:27Z,34,issue moving from 0.3.0 to v0.4.0
+170,closed,2011-09-25T14:53:47Z,2012-01-16T17:48:15Z,2715,Implement frequency table function a la table in R
+171,closed,2011-09-25T15:04:15Z,2012-07-12T20:59:01Z,6990,Add Panel.dropna method of some kind
+172,closed,2011-09-25T15:28:08Z,2011-10-15T20:43:35Z,486,SparseSeries.__add__ perf bad with large # of blocks
+173,closed,2011-09-25T15:38:55Z,2011-12-12T04:40:04Z,1862,Implement sparse array / accumulator object
+174,closed,2011-09-25T15:43:16Z,2012-03-14T20:14:47Z,4109,Add axis= keyword to DataFrame.fillna
+175,closed,2011-09-25T15:53:28Z,2011-11-06T01:44:27Z,994,prettytable library integration for nice console output
+176,closed,2011-09-25T16:30:03Z,2011-09-29T01:06:12Z,81,Join general speed optimizations
+177,closed,2011-09-26T20:20:13Z,2011-09-27T04:03:41Z,8,Write Cython code generation for take routines once stabilized
+178,closed,2011-09-27T04:30:31Z,2011-10-01T20:30:39Z,113,DateRange.union speed shortcuts don't work in some cases
+179,closed,2011-09-27T08:19:17Z,2012-04-22T02:11:51Z,4986,Pre-epoch dates giving OverflowError in mktime with HDFStore
+180,closed,2011-09-27T10:22:30Z,2011-10-04T15:51:00Z,174,import pandas
+181,closed,2011-09-28T02:32:20Z,2011-10-01T19:56:43Z,90,as_index in GroupBy still not fully implemented
+182,closed,2011-09-28T15:03:45Z,2011-10-01T19:24:10Z,77,DataFrame to_csv() ignores nanRep argument for float32 input
+183,closed,2011-09-28T18:24:37Z,2011-09-28T19:50:47Z,2,nosetests failures and errors
+184,closed,2011-09-29T01:29:57Z,2012-05-15T00:15:43Z,5495,Consistently set group name on groupby groups
+185,closed,2011-09-29T01:31:48Z,2011-09-30T01:05:08Z,24,Advanced indexing .ix does not handle step with integer labels
+186,closed,2011-09-29T03:35:46Z,2011-09-29T04:25:47Z,1,Update README file to note that Cython is required for build
+187,closed,2011-09-30T01:11:13Z,2011-10-01T01:41:57Z,25,notnull very slow compared with 0.3.0
+188,closed,2011-10-01T00:36:41Z,2011-10-02T02:46:03Z,27,Add method to MultiIndex for retrieving level values
+189,closed,2011-10-01T01:02:14Z,2011-12-12T05:20:53Z,1733,Add fast pairwise rolling correlation function
+190,closed,2011-10-01T02:16:55Z,2012-04-22T02:14:24Z,4896,pytz integration with fast local tz conversions with datetime64 dtype
+191,closed,2011-10-02T03:33:45Z,2013-09-22T16:07:19Z,17317,SQLalchemy interface in pandas.io
+192,closed,2011-10-02T13:35:17Z,2012-01-06T05:22:04Z,2296,setupegg.py develop won't invoke Cython
+193,closed,2011-10-02T16:06:48Z,2011-10-03T01:36:51Z,10,Add out argument to common.take_1d
+194,closed,2011-10-04T07:06:35Z,2011-11-14T03:10:39Z,981,adding covariance to dataframe
+195,closed,2011-10-04T13:26:13Z,2011-10-04T13:53:12Z,1,DateRange not only with datetime() but also with date().
+196,closed,2011-10-04T13:42:05Z,2011-10-09T17:41:35Z,124,summary() method to all pandas objects.
+197,closed,2011-10-04T15:49:48Z,2011-10-06T15:57:23Z,49,Raise SkipTest if no xlrd
+198,closed,2011-10-05T22:34:32Z,2011-10-05T23:16:20Z,1,MultiIndex Bugs (may be related to failure of get_tuple_index)
+199,closed,2011-10-06T18:25:09Z,2011-10-09T17:36:26Z,72,MultiIndex with single level does not work
+200,closed,2011-10-06T18:53:36Z,2011-10-09T03:13:19Z,57,Python 3 compatibility
+201,closed,2011-10-06T18:57:04Z,2011-10-06T21:24:33Z,3,".append drops MultiIndex, .join not supported for MultiIndex"
+202,closed,2011-10-06T20:26:31Z,2011-10-06T20:46:52Z,1,.sortlevel does not retain .names in MultiIndex
+203,closed,2011-10-07T11:55:26Z,2011-10-09T16:52:47Z,53,Expose isnull and notnull as methods
+204,closed,2011-10-07T18:30:04Z,2011-10-07T19:18:07Z,1,HDFStore chokes on writing empty LongPanel
+205,closed,2011-10-08T20:25:44Z,2011-10-09T14:25:43Z,18,Sparse speed optimization
+206,closed,2011-10-08T23:00:37Z,2011-10-09T00:03:16Z,2,Use stdlib csv module to write csv
+207,closed,2011-10-08T23:47:24Z,2012-05-21T18:12:22Z,5419,"Add inplace option to many DataFrame, etc. methods"
+208,closed,2011-10-09T14:11:38Z,2012-04-13T01:45:48Z,4476,Datetime string parser integration with Index class
+209,closed,2011-10-09T16:02:04Z,2011-10-09T16:56:36Z,1,Series methods isnull and notnull
+210,closed,2011-10-09T17:43:57Z,2011-11-10T04:10:30Z,755,Add some kind of describe-like / summary ability for non-numeric data
+211,closed,2011-10-10T01:37:35Z,2011-10-11T20:13:30Z,43,Refactor internals.join_managers to reduce overhead in homogeneous case
+212,closed,2011-10-10T03:16:22Z,2011-10-13T04:17:16Z,74,Optimize nested dict -> DataFrame conversions
+213,closed,2011-10-10T17:43:25Z,2011-10-13T03:22:13Z,58,Add simple attribute access to DataFrame columns
+214,closed,2011-10-11T17:54:16Z,2011-10-11T19:39:18Z,2,Add multi-key join capability
+215,closed,2011-10-11T17:55:08Z,2011-10-12T14:35:57Z,21,Speed enhancements in DataFrame.xs
+216,closed,2011-10-11T18:04:43Z,2012-05-07T15:03:33Z,5013,Add method argument to align functions for forward/backfilling
+217,closed,2011-10-11T18:26:51Z,2012-12-03T15:10:28Z,10053,Micro-optimizations in DataFrame for tracking state of internal consolidation
+218,closed,2011-10-11T18:59:45Z,2012-01-05T01:45:53Z,2047,Optimize BlockManager.join_on for special types
+219,closed,2011-10-11T20:12:16Z,2011-11-14T03:08:56Z,799,See if possible to optimize multi-key joining beyond its current state
+220,closed,2011-10-11T21:09:08Z,2011-12-31T00:16:27Z,1924,Implement outer/inner/right join logic when joining on a key
+222,closed,2011-10-12T00:40:07Z,2012-04-23T04:59:26Z,4661,xts-like string date indexing shorthand
+221,closed,2011-10-12T00:40:07Z,2011-10-12T00:40:30Z,1,xts-like string date indexing shorthand
+223,closed,2011-10-12T00:52:33Z,2011-10-14T13:41:24Z,61,Groupby level name
+224,closed,2011-10-12T12:03:52Z,2011-10-12T15:04:10Z,4,Plotting series (columns) fails
+225,closed,2011-10-12T14:19:49Z,2011-10-12T18:54:16Z,5,read_csv interprets index column as dates
+226,closed,2011-10-12T14:53:39Z,2011-10-13T03:27:27Z,13,read_csv should have better failure mode with spurious 'index' column
+227,closed,2011-10-12T18:54:45Z,2011-10-13T03:28:23Z,9,Document recent updates to parser functions and API changes in sphinx docs
+228,closed,2011-10-12T20:37:50Z,2011-10-13T03:15:03Z,7,Update docs on reading CSV files.
+229,closed,2011-10-13T03:33:21Z,2011-10-14T22:13:06Z,43,Remove deprecations from 0.3-0.4 for 0.5 release
+230,closed,2011-10-13T13:43:29Z,2011-10-14T04:11:38Z,15,Register the DataFrame type with `IPython.utils.generic.complete_object`
+231,closed,2011-10-13T13:45:18Z,2011-10-15T19:20:41Z,54,Objects indexed by datetime.date can't be stored in HDFStore
+232,closed,2011-10-13T16:11:54Z,2011-10-14T21:49:30Z,30,to_string() returning None
+233,closed,2011-10-13T20:26:39Z,2011-10-14T04:14:05Z,8,Add columns to IPython tab completions of DataFrame attributes
+234,closed,2011-10-14T02:12:17Z,2011-10-21T17:42:44Z,184,Write nice user-facing pivot table creation function
+235,closed,2011-10-14T11:39:20Z,2011-10-14T12:40:11Z,2,Index class ignores dtype parameter
+236,closed,2011-10-14T12:40:38Z,2013-09-25T20:08:12Z,17096,Add Float64Index class?
+237,closed,2011-10-14T21:01:49Z,2011-10-14T21:15:38Z,1,Groupby apply mixed-type casting problem
+238,closed,2011-10-14T22:28:24Z,2011-10-15T18:53:42Z,21,Joining with empty DataFrame on outer breaks
+239,closed,2011-10-15T19:36:07Z,2011-10-15T19:52:37Z,1,Enable creation of empty Panel objects
+240,closed,2011-10-15T22:40:50Z,2011-10-19T22:22:19Z,96,Add unique value counter method to Series / DataFrame
+241,closed,2011-10-16T18:06:10Z,2011-10-19T20:34:41Z,75,.describe() for series of objects
+242,closed,2011-10-16T22:55:48Z,2011-10-21T04:32:49Z,102,Add nrows argument and chunking iterator to file parsers
+243,closed,2011-10-17T03:30:32Z,2011-10-21T18:10:54Z,111,Add rename function on Panel
+244,closed,2011-10-17T12:33:49Z,2011-10-19T20:23:20Z,56,Support different delimiters for to_csv
+245,closed,2011-10-17T16:13:36Z,2016-12-31T00:32:21Z,45633,Add ad-hoc indexing to DataFrame
+246,closed,2011-10-18T18:22:23Z,2011-10-18T18:31:50Z,1,DataFrame.join on key with single key failure
+247,closed,2011-10-18T18:40:52Z,2011-10-19T22:22:35Z,28,Add histogram / unique counter function to Series
+248,closed,2011-10-18T18:42:03Z,2011-10-18T19:47:53Z,2,"Add ""inner join"" option for DataFrame"
+249,closed,2011-10-18T18:43:08Z,2011-12-31T00:16:45Z,1758,Add join / merge functionality for non-uniquely keyed data
+250,closed,2011-10-18T18:58:47Z,2011-10-19T21:21:07Z,27,"Add helpful warning/error message when calling ""import pandas"" from source directory"
+251,closed,2011-10-18T19:12:20Z,2011-10-18T20:59:19Z,2,Subplots error when DataFrame column contains all null values
+252,closed,2011-10-18T19:36:14Z,2011-10-19T21:07:19Z,26,Casting float column to int does not work
+253,closed,2011-10-18T19:39:08Z,2011-10-18T22:08:01Z,3,Enable select list of DataFrame columns from __getitem__
+254,closed,2011-10-18T21:38:22Z,2011-10-19T20:28:53Z,23,fixed #251
+255,closed,2011-10-19T14:39:56Z,2016-01-14T21:30:08Z,37159,Use Cython fused types
+256,closed,2011-10-19T14:40:34Z,2011-10-20T22:44:23Z,33,Faster count function
+257,closed,2011-10-19T15:40:45Z,2011-10-19T17:27:28Z,2,Specifying names should make header=None by default in read_table
+258,closed,2011-10-19T16:06:23Z,2011-10-19T17:27:37Z,2,read_table will modify passed names if index_col is not None
+259,closed,2011-10-19T21:23:56Z,2011-10-19T21:29:48Z,1,Counter class for Python < 2.7
+260,closed,2011-10-20T12:19:18Z,2011-10-21T04:32:09Z,17,MultiIndex.diff not implemented and drops through to Index.diff
+261,closed,2011-10-20T13:18:21Z,2011-10-21T04:32:32Z,16,Make & and | call intersection/union on Index objects
+262,closed,2011-10-20T15:11:40Z,2011-10-20T22:54:13Z,8,Index names lost when calling sort_index
+263,closed,2011-10-20T15:49:22Z,2011-10-21T04:48:45Z,13,Cannot represent empty MultiIndex
+264,closed,2011-10-20T16:52:16Z,2011-10-20T23:04:00Z,7,Fix for IPython completion with non-string column names.
+265,closed,2011-10-20T18:11:03Z,2011-10-20T22:44:05Z,5,Rename Series.histogram -> value_counts and sort descending
+266,closed,2011-10-20T21:29:41Z,2011-10-24T18:28:54Z,93,Add convenience method for adding index from record-like DataFrame
+267,closed,2011-10-20T21:58:24Z,2011-12-31T00:16:57Z,1707,Implement true SQL-style joins
+268,closed,2011-10-21T04:42:01Z,2011-10-22T01:58:56Z,22,"Add general load/save functions to pandas.* namespace, and update docs"
+269,closed,2011-10-21T04:55:54Z,2013-07-29T03:07:44Z,15527,Promote modules out of core?
+270,closed,2011-10-21T16:02:13Z,2011-10-21T17:13:58Z,2,Series constructor fails on list of tuples
+271,closed,2011-10-21T18:35:53Z,2011-10-22T02:14:02Z,8,Add pyx dependencies for tseries.pyx
+272,closed,2011-10-21T19:18:36Z,2011-10-22T02:23:20Z,8,Change Series.clip to work with numpy.clip
+273,closed,2011-10-21T20:00:21Z,2012-01-06T05:54:18Z,1834,Add optimized multiple-join / concatenation functions
+274,closed,2011-10-21T21:30:59Z,2011-10-22T02:43:49Z,6,Decide what to do about DataFrame.from_csv default options
+275,closed,2011-10-21T23:16:58Z,2011-10-21T23:30:54Z,1,nanRep argument deprecation + FutureWarning
+276,closed,2011-10-22T00:42:27Z,2011-10-22T02:18:41Z,2,Make sure DataFrame.append is equivalent to rbind_fill for different columns
+277,closed,2011-10-22T01:24:29Z,2011-10-22T02:38:37Z,2,Do something about NA values in Series.value_counts and describe on object arrays
+278,closed,2011-10-22T22:51:18Z,2011-10-23T02:12:04Z,4,Update install docs now that pandas works on Python 3
+279,closed,2011-10-23T00:25:14Z,2011-10-24T16:23:48Z,40,Add level names to Series.__repr__
+280,closed,2011-10-23T01:55:10Z,2011-10-24T17:58:29Z,41,Check for duplicate index names or None in MultiIndex
+281,closed,2011-10-23T17:10:08Z,2011-11-06T01:43:04Z,321,Refactor Series to_string / repr-related methods to be cleaner
+282,closed,2011-10-24T05:04:41Z,2011-12-16T01:32:38Z,1269,Speed up GroupBy Cython methods to not have to sort data
+283,closed,2011-10-24T05:14:54Z,2011-10-24T16:23:33Z,12,Test Index.append when passing empty list
+284,closed,2011-10-24T13:14:12Z,2011-10-24T15:07:07Z,2,Issues with mod_wsgi?
+285,closed,2011-10-24T19:00:45Z,2011-10-25T01:35:04Z,7,Investigate erroneous int conversion in MultiIndex
+286,closed,2011-10-25T11:46:37Z,2011-11-14T07:22:04Z,476,"ENH: Adding argmin, argmax to Series and DataFrame."
+287,closed,2011-10-25T13:42:51Z,2011-11-14T08:31:05Z,475,ENH: Adding DataFrame.boxplot()
+288,closed,2011-10-25T14:16:59Z,2012-01-23T15:13:00Z,2161,R-like range() function
+289,closed,2011-10-25T18:08:19Z,2011-11-02T05:48:37Z,180,Add fast API function to filter using a set of values
+290,closed,2011-10-26T00:56:05Z,2011-10-26T01:14:10Z,1,DataFrame.to_csv throws exception
+291,closed,2011-10-26T01:39:36Z,2011-11-05T00:53:26Z,240,"Add skipfooter option to read_{csv,table}"
+292,closed,2011-10-26T04:09:46Z,2012-06-05T19:38:42Z,5368,Add support for ordered factors and groupby handling
+293,closed,2011-10-26T13:52:34Z,2011-11-04T20:04:21Z,223,DataFrame constructor fails on list of tuples
+294,closed,2011-10-26T14:44:22Z,2011-10-27T13:47:29Z,24,Series.__setitem__ ValueError
+295,closed,2011-10-26T14:50:57Z,2011-10-26T14:54:07Z,1,add .head() and .tail() to Series
+296,closed,2011-10-26T14:52:55Z,2011-11-02T04:37:04Z,158,add .head() and .tail() to Series
+297,closed,2011-10-26T16:25:32Z,2011-11-16T09:04:32Z,497,"Add ""count distinct"" function, useful for groupby"
+298,closed,2011-10-26T23:32:05Z,2011-11-04T20:27:55Z,213,Raise more helpful Exception if dateutil.parser fails in DateRange
+299,closed,2011-10-26T23:49:10Z,2011-11-04T20:35:35Z,213,Improve performance of groupby on MultiIndex'd data
+300,closed,2011-10-27T04:01:48Z,2011-11-14T18:57:51Z,447,Add function to read DataFrame from clipboard across platforms
+301,closed,2011-10-27T04:20:59Z,2011-11-14T01:15:06Z,429,Alternate constructor for dict of DataFrame -> Panel that doesn't nuke type information
+302,closed,2011-10-27T04:36:26Z,2011-12-12T04:48:23Z,1105,"Add DataFrame ""type inference"" function for casting object arrays to a more appropriate type"
+303,closed,2011-10-27T14:21:14Z,2011-11-08T04:33:05Z,279,Add back proper rolling WLS / panel WLS
+304,closed,2011-10-27T14:45:53Z,2011-10-28T15:13:43Z,25,Cannot fill inserted column of NaNs
+305,closed,2011-10-27T19:36:55Z,2011-11-04T22:23:26Z,195,Print hierarchical index names in Series.__repr__
+306,closed,2011-10-28T16:45:30Z,2011-11-05T01:32:57Z,177,Document DataFrame.set_index
+307,closed,2011-10-29T07:26:37Z,2011-11-02T05:26:22Z,94,"ENH: Add .topK(col, k) to DataFrame"
+308,closed,2011-10-30T22:22:34Z,2011-11-07T00:47:31Z,171,Should return DataFrame in Series.groupby when as_index=False
+309,closed,2011-10-31T01:26:56Z,2011-11-13T23:17:03Z,334,"Implement fast Cython Series iterator, for speeding up DataFrame.apply"
+310,closed,2011-10-31T02:34:05Z,2011-11-02T19:11:23Z,65,Deprecation warning in __init__.py
+311,closed,2011-11-01T00:42:23Z,2011-11-04T22:19:15Z,94,aggregate_item_by_item does not handle as_index=False in GroupBy
+312,closed,2011-11-01T14:55:53Z,2011-11-04T20:11:00Z,78,Enable passing vector to on argument in DataFrame.join
+313,closed,2011-11-01T18:17:20Z,2011-11-02T05:03:50Z,11,ENH: Added the level arguments to the series and frame math operations
+314,closed,2011-11-01T18:56:52Z,2011-11-03T21:31:38Z,51,Series.apply() does not always return a Series
+315,closed,2011-11-01T19:56:01Z,2011-11-03T21:19:25Z,50,Support boolean data in Cythonized groupby
+316,closed,2011-11-01T21:10:07Z,2011-12-24T21:37:14Z,1273,Raise warning or exception when calling Series.sort when do not own data
+317,closed,2011-11-01T21:19:23Z,2011-11-03T21:39:18Z,49,Don't show Series.name if it's None
+318,closed,2011-11-01T21:20:42Z,2011-11-04T20:12:29Z,71,Fix DataFrame.join docs to note that a Series with a name can be passed
+319,closed,2011-11-01T23:20:43Z,2011-11-07T02:43:57Z,124,Add new function to remove duplicate rows from a DataFrame
+320,closed,2011-11-02T02:15:02Z,2011-11-02T03:02:31Z,1,read_csv fails to import data
+321,closed,2011-11-02T16:50:06Z,2011-11-03T21:41:40Z,29,Added a QuarterEnd class to datetools module.
+322,closed,2011-11-02T18:05:41Z,2012-04-10T05:07:38Z,3828,Round trip from CSV to CSV should leave data types unaltered
+323,closed,2011-11-02T18:34:47Z,2011-11-05T00:00:46Z,54,[BUG] DataFrame.describe fails if no numeric columns
+324,closed,2011-11-02T20:30:48Z,2011-11-03T21:04:37Z,25,add legend to DataFrame.plot()
+325,closed,2011-11-02T21:17:27Z,2011-11-05T00:32:56Z,52,to_string on DataFrame may print column labels in the wrong order
+326,closed,2011-11-02T21:57:40Z,2011-11-03T21:03:07Z,24,DataFrame.plot with legend fails when the columns are integers
+327,closed,2011-11-02T21:58:12Z,2011-11-03T21:45:22Z,24,Investigate why numpy.unique is so slow on Series input
+328,closed,2011-11-03T12:44:21Z,2012-01-07T01:29:06Z,1549,Fundamental issue with ix
+329,closed,2011-11-03T21:25:02Z,2011-11-05T01:08:44Z,28,[Bug] pandas.io.data.DataReader Yahoo dates bug
+330,closed,2011-11-03T21:27:35Z,2011-11-03T21:38:50Z,1,ENH: small corrections to Series repr
+331,closed,2011-11-04T16:36:19Z,2011-11-04T16:43:36Z,1,DataFrame.join fails with unconsolidated inputs
+332,closed,2011-11-04T16:51:37Z,2011-11-05T03:45:27Z,11,New attribute error associated with tseries
+333,closed,2011-11-04T17:49:42Z,2011-11-04T22:56:24Z,6,Add float_format option to Series.to_string
+334,closed,2011-11-04T19:43:08Z,2011-11-04T22:22:59Z,3,ENH: Print hierarchical index names in Series.__repr__
+335,closed,2011-11-04T21:15:22Z,2011-11-05T00:04:21Z,3,Issue with _set_item not consolidating
+336,closed,2011-11-04T21:25:35Z,2011-11-04T21:39:28Z,1,make it easier to join TS to DF
+337,closed,2011-11-05T03:59:53Z,2011-11-06T23:03:50Z,44,DataFrame.min/max do not support mixed-type frames currently
+338,closed,2011-11-05T22:46:20Z,2012-01-12T19:53:28Z,1630,Implement label-based fancy indexing analogue for DataFrame
+339,closed,2011-11-05T22:59:05Z,2011-11-13T23:45:30Z,193,Add function to infer better dtypes for DataFrame columns of object dtype
+340,closed,2011-11-06T01:42:04Z,2012-01-25T23:21:18Z,1942,See if it's possible to have somewhat sensible unicode handling
+341,closed,2011-11-06T21:23:48Z,2011-11-07T01:15:13Z,4,Use faster count_level_1d function in DataFrame too
+342,closed,2011-11-07T00:40:35Z,2011-12-19T05:21:30Z,1013,Enable easier transformations of multiple columns in DataFrame
+343,closed,2011-11-07T06:26:29Z,2011-11-08T05:14:54Z,23,Add converters argument to read_csv a la np.loadtxt
+344,closed,2011-11-07T07:15:04Z,2011-11-07T16:42:38Z,10,library not found for -lbundle1.o
+345,closed,2011-11-07T16:26:06Z,2011-11-07T20:12:02Z,4,Quarterend
+346,closed,2011-11-07T16:37:40Z,2011-11-08T04:46:30Z,13,Raise more helpful ImportError if dateutil 2.0 installed on Python 2.x
+347,closed,2011-11-07T16:41:38Z,2011-11-08T04:30:37Z,12,"Implement logical operators on DataFrame, &, |, ^, ~"
+348,closed,2011-11-08T01:59:02Z,2011-11-14T00:57:16Z,143,Add kind='line' or 'bar' argument to DataFrame.plot
+349,closed,2011-11-08T04:57:10Z,2011-11-08T05:22:20Z,1,index_col argument in read_csv may not respect order given
+350,closed,2011-11-08T09:56:11Z,2012-05-14T15:05:24Z,4518,Conversion of DataFrame to R's data.frame
+351,closed,2011-11-08T21:34:02Z,2011-11-10T03:17:05Z,30,.join works incorrectly with MultiIndex (data is not actually alligned)
+352,closed,2011-11-09T10:48:44Z,2011-11-10T01:50:25Z,16,Badly-formatted hashbang in setup.py
+353,closed,2011-11-09T21:49:54Z,2011-11-10T02:09:06Z,5,str + Series does not yield expected result
+354,closed,2011-11-10T16:14:03Z,2011-11-10T20:06:57Z,4,pivot_table should fail if duplicate entries exist
+355,closed,2011-11-10T16:33:30Z,2011-11-11T21:05:56Z,29,Vectorize pandas.Series.apply
+356,closed,2011-11-10T17:54:40Z,2011-11-10T18:04:55Z,1,read_csv error
+357,closed,2011-11-10T21:23:56Z,2011-11-11T20:50:49Z,24,Add Fast DataFrame constructor from records (list of tuples)
+358,closed,2011-11-10T21:50:56Z,2011-11-11T18:37:45Z,21,Single column groupby does not set name
+359,closed,2011-11-11T14:13:36Z,2011-11-11T17:23:27Z,4,creating Panel from dict of DataFrames loses dtypes
+360,closed,2011-11-13T01:15:27Z,2011-11-13T04:28:35Z,4,"Add fast methods for getting and putting single elements in DataFrame, Panel"
+361,closed,2011-11-13T02:00:31Z,2011-11-13T04:25:34Z,3,Move caching decorators to Cython for speed
+362,closed,2011-11-13T15:45:22Z,2011-11-13T17:51:58Z,3,Issues #194 (cov function) and #92 (multi-column sort)
+363,closed,2011-11-14T08:01:51Z,2011-11-22T16:50:33Z,201,"GroupBy Series with name field set, should pass on name"
+364,closed,2011-11-14T18:59:02Z,2011-11-17T18:26:12Z,72,Support separators with > 1 character and regular expressions in read_table
+365,closed,2011-11-15T00:58:46Z,2011-11-16T20:02:10Z,44,rolling_* with min_periods=0
+366,closed,2011-11-15T11:09:50Z,2011-11-16T08:35:13Z,22,Traceback when calling df.as_matrix()
+367,closed,2011-11-15T15:53:22Z,2011-11-16T08:50:45Z,17,Exception Joining DataFrames and Series
+368,closed,2011-11-15T21:56:19Z,2011-11-23T17:41:20Z,188,DataFrame.boxplot fixes
+369,closed,2011-11-16T01:28:01Z,2011-11-18T17:39:18Z,65,Fix graphics tests under Python 3
+370,closed,2011-11-16T06:10:39Z,2011-11-17T09:01:05Z,27,Add ability to stack/unstack multiple levels at once
+371,closed,2011-11-16T10:54:19Z,2012-01-16T22:00:56Z,1476,Wildcard for indexing with MultiIndex
+372,closed,2011-11-16T15:04:33Z,2011-11-16T19:18:40Z,5,Unable to build from HEAD
+373,closed,2011-11-16T17:15:52Z,2011-11-16T19:28:29Z,3,DataFrame constructor when passed a Series
+374,closed,2011-11-16T19:36:08Z,2011-12-28T22:16:48Z,1011,Better skiplist data structure implementation in Cython
+375,closed,2011-11-17T12:21:36Z,2011-11-18T06:08:34Z,18,Pivoting on multiple columns causes data loss
+376,closed,2011-11-17T17:21:21Z,2011-11-25T20:21:01Z,195,"Enable pass through *args, **kwargs to function in DataFrame.apply"
+377,closed,2011-11-17T17:34:22Z,2011-11-17T17:57:48Z,1,mixed type dataframe loses type info
+378,closed,2011-11-17T18:52:42Z,2011-11-18T06:48:05Z,12,Exception Upon Pivoting an Empty DataFrame
+379,closed,2011-11-17T22:03:21Z,2011-11-22T05:38:32Z,104,Allow user to pass level names to swaplevel
+380,closed,2011-11-17T22:16:02Z,2011-11-18T15:30:05Z,18,Exception With np.frompyfunc
+381,closed,2011-11-17T23:39:43Z,2011-11-18T06:23:17Z,7,Pass list to values argument in pivot_table
+382,closed,2011-11-18T00:07:02Z,2011-11-23T03:41:21Z,124,DataFrame should be more aggressive about trying to aggregate numeric data stored in dtype object
+383,closed,2011-11-18T06:17:18Z,2012-05-14T20:01:58Z,4286,Pass multiple columns to DataFrameGroupBy.__getitem__
+384,closed,2011-11-18T07:33:01Z,2011-11-23T03:40:33Z,117,Test all NA case in min/max functions
+385,closed,2011-11-18T09:21:29Z,2011-11-18T17:35:29Z,9,resolve issue 368
+386,closed,2011-11-18T09:38:17Z,2011-11-19T19:18:47Z,34,DataFrame.dtypes reports all object dtypes even if items aren't object dtype
+387,closed,2011-11-18T09:53:38Z,2011-11-18T17:44:30Z,8,DataFrame.to_html()
+388,closed,2011-11-18T17:34:38Z,2014-03-09T15:19:04Z,20206,Even more agile reshaping
+389,closed,2011-11-18T18:59:34Z,2011-11-22T18:38:03Z,96,DataFrame.apply returns Series
+390,closed,2011-11-18T19:38:38Z,2011-11-22T05:14:27Z,82,Result of asfreq should have DateRange index
+391,closed,2011-11-20T02:18:03Z,2012-04-26T18:46:25Z,3809,Add more robust frequency inference function
+392,closed,2011-11-20T02:27:03Z,2011-11-22T05:07:22Z,51,Do converters work for index columns in read_csv?
+393,closed,2011-11-21T18:56:12Z,2011-11-22T16:22:29Z,22,Make delevel work with non-MultiIndex with a name
+394,closed,2011-11-21T18:56:54Z,2011-11-22T05:50:21Z,11,.ix[val] discards index names
+395,closed,2011-11-21T19:00:59Z,2012-01-10T00:01:10Z,1182,Tweak DataFrame formatting to always use same # of digits
+396,closed,2011-11-22T03:55:50Z,2011-11-23T17:20:01Z,38,Handle masked arrays in DataFrame constructor
+397,closed,2011-11-22T05:00:20Z,2011-11-23T03:40:24Z,23,Partial setting (with more than 1 level specified) with .ix raises exception
+400,closed,2011-11-22T05:00:21Z,2011-11-22T05:05:19Z,1,Partial setting (with more than 1 level specified) with .ix raises exception
+399,closed,2011-11-22T05:00:21Z,2011-11-22T05:05:19Z,1,Partial setting (with more than 1 level specified) with .ix raises exception
+398,closed,2011-11-22T05:00:21Z,2011-11-22T05:05:19Z,1,Partial setting (with more than 1 level specified) with .ix raises exception
+401,closed,2011-11-22T16:20:05Z,2014-05-28T23:12:49Z,22039,Panel property specifying orientation
+402,closed,2011-11-22T16:24:19Z,2012-05-07T19:43:01Z,4012,Support things other than column names in DataFrame.set_index
+403,closed,2011-11-22T17:07:04Z,2011-11-23T06:12:46Z,14,Unstack with an object variable overwrites BlockManager
+404,closed,2011-11-22T17:37:17Z,2018-07-06T19:38:06Z,58035,Add ignore option to unstack or something like that
+405,closed,2011-11-23T16:11:30Z,2011-11-23T17:07:42Z,1,GroupBy does not handle non-string column labels passed
+406,closed,2011-11-23T17:26:50Z,2012-05-14T15:02:46Z,4150,Test / handle other dtypes when passing MaskedArray to DataFrame constructor
+407,closed,2011-11-23T21:10:55Z,2012-11-02T14:11:13Z,8274,"Improve memory usage of read_csv, Python objects take up too much"
+408,closed,2011-11-24T00:53:07Z,2011-11-24T02:12:48Z,2,Index name is not properly pickled/unpickled
+409,closed,2011-11-24T01:52:48Z,2012-04-11T03:21:30Z,3338,"A lot of partial setting stuff doesn't work with .ix, needs testing/work"
+410,closed,2011-11-24T02:08:03Z,2013-09-20T16:31:03Z,15999,Set up some kind of system for testing legacy pickles
+411,closed,2011-11-24T11:27:35Z,2011-11-25T05:50:26Z,19,Panel constructor ignores dtype
+412,closed,2011-11-24T17:58:54Z,2011-12-03T17:51:12Z,216,Override Index.astype to prevent bad things from happening
+413,closed,2011-11-24T19:21:01Z,2018-07-06T19:31:39Z,57985,API: Making plot methods more uniform in their options
+414,closed,2011-11-24T20:14:15Z,2013-11-22T09:52:45Z,17486,Conditional split/groupby
+415,closed,2011-11-25T05:30:16Z,2012-06-01T20:23:19Z,4551,Implement equivalent of cut function from base R
+416,closed,2011-11-25T20:06:03Z,2011-11-26T03:09:18Z,8,GroupBy level should pass on level name to result index
+417,closed,2011-11-26T14:46:45Z,2011-11-28T21:11:49Z,55,test failures with v0.6.0
+418,closed,2011-11-27T16:46:13Z,2011-11-30T21:09:21Z,77,strange behavior with int in DF
+419,closed,2011-11-28T00:25:18Z,2011-12-02T21:03:13Z,117,DataReader - request to truncate retrieved data to specified dates
+420,closed,2011-11-28T07:49:49Z,2011-12-02T20:14:52Z,109,Change Series default float formatter.
+421,closed,2011-11-28T10:45:38Z,2011-12-02T22:01:06Z,108,Buglet in groupby when passing function like len with as_index False
+422,closed,2011-11-28T20:20:20Z,2011-12-12T04:38:22Z,321,names param in DataFrame.from_records should be called columns
+423,closed,2011-11-28T20:31:16Z,2011-11-29T00:10:45Z,4,DataFrame.count corner case with empty columns
+424,closed,2011-11-30T11:19:12Z,2011-12-02T20:15:03Z,57,Pass Series.hist **kwds on to plotting function.
+425,closed,2011-11-30T20:37:32Z,2011-12-02T00:55:34Z,29,more momery efficient describe() for DataFrame
+426,closed,2011-11-30T22:23:28Z,2011-12-01T04:03:36Z,6,Build errors using llvm-gcc
+427,closed,2011-12-01T00:43:31Z,2011-12-02T00:48:12Z,25,Bugfix for issue 419 and .gitignore fixup
+428,closed,2011-12-01T10:43:00Z,2011-12-12T02:50:53Z,257,add rank and rank correlation methods
+429,closed,2011-12-02T15:13:10Z,2011-12-12T05:06:23Z,230,Boolean ops with Series should reindex?
+430,closed,2011-12-02T16:11:55Z,2011-12-02T21:17:17Z,6,Enable DataFrame.append to add a single row Series
+431,closed,2011-12-02T16:17:55Z,2011-12-02T21:02:23Z,5,".ix[row, col] should preserve type"
+432,closed,2011-12-02T16:43:57Z,2011-12-02T20:46:17Z,5,Element-wise map does not produce DataFrame in apply
+433,closed,2011-12-02T16:46:51Z,2012-05-02T21:30:45Z,3653,Add section about development / contributing to the docs
+434,closed,2011-12-02T20:09:31Z,2011-12-02T20:23:30Z,1,Empty series corner case arith bug
+435,closed,2011-12-02T21:19:22Z,2011-12-08T02:58:43Z,126,Using pandas with PyQt
+436,closed,2011-12-02T21:19:57Z,2011-12-11T23:15:17Z,218,Implement SparseList and SparseArray support data structures
+437,closed,2011-12-02T21:29:39Z,2011-12-06T00:26:55Z,75,Fast as possible get_value/put_value methods for Series/DataFrame/Panel
+438,closed,2011-12-02T21:32:34Z,2011-12-09T00:37:58Z,148,Methods for inserting values
+439,closed,2011-12-02T21:37:23Z,2011-12-18T21:57:15Z,385,Faster conversion of dict of large SparseSeries -> SparseDataFrame
+440,closed,2011-12-02T22:14:57Z,2011-12-02T22:48:12Z,1,DataFrame.delevel infer dtypes better
+441,closed,2011-12-03T17:12:27Z,2011-12-08T04:39:42Z,108,issue with py2exe
+442,closed,2011-12-04T06:55:39Z,2011-12-05T02:39:44Z,20,Minor fix for simpler indexing syntax in array of subplots.
+443,closed,2011-12-05T02:28:39Z,2019-11-18T17:09:33Z,69735,Add NA handling option to GroupBy
+444,closed,2011-12-05T04:14:09Z,2011-12-12T04:30:56Z,169,More convenient syntax for DataFrame constructor to declare order of columns?
+445,closed,2011-12-05T19:02:41Z,2014-08-17T21:24:02Z,23667,Sparse data structure support for MultiIndex?
+446,closed,2011-12-05T19:05:42Z,2011-12-08T04:42:07Z,58,Cache DataFrame items in Panel to improve performance
+447,closed,2011-12-05T19:40:26Z,2017-01-25T15:54:32Z,45069,DataFrames should have a name attribute.
+448,closed,2011-12-05T20:34:27Z,2013-08-16T19:30:23Z,14879,Build data structure similar to BlockManager for sparse objects
+449,closed,2011-12-05T23:35:36Z,2012-01-06T05:38:59Z,751,Decorator for copying documentation from one function to another
+450,closed,2011-12-06T11:25:27Z,2011-12-07T00:55:55Z,14,"When adding a Series to a DataFrame with a different index, the Series gets turned into all NaNs"
+451,closed,2011-12-06T14:52:41Z,2011-12-08T05:06:53Z,39,DataFrame.unstack() issue when unstacking multiple levels.
+452,closed,2011-12-06T15:32:31Z,2011-12-08T19:50:19Z,53,"UnboundLocalError when setting data to a Panel: ""local variable 'mat' referenced before assignment"""
+453,closed,2011-12-06T15:48:18Z,2011-12-08T04:33:25Z,37,"Series/DataFrame, make decision between full and short __repr__ configurable"
+454,closed,2011-12-06T16:30:34Z,2011-12-12T04:09:23Z,132,Saving Panel with float index to HDFStore fails
+455,closed,2011-12-06T18:32:19Z,2012-01-20T03:53:49Z,1066,Possible API method for retrieving rows by number
+456,closed,2011-12-06T20:04:32Z,2011-12-08T03:48:17Z,32,DateRange union bug caused by bad DateOffset comparison
+457,closed,2011-12-06T22:50:14Z,2011-12-08T03:40:06Z,29,"Structured array passed to DataFrame constructor can't have passed columns ""selected"" from it"
+458,closed,2011-12-07T14:40:22Z,2011-12-07T23:32:35Z,9,winXP 32-bit build problems
+459,closed,2011-12-07T15:29:54Z,2014-03-11T01:33:18Z,19787,DataFrame rendering stylists?
+460,closed,2011-12-07T19:24:05Z,2011-12-07T23:32:23Z,5,Master does not compile on windows
+461,closed,2011-12-07T20:31:37Z,2011-12-09T20:10:35Z,48,"Enhance DataFrame.align to work with Series input / index-only option, add axis option"
+462,closed,2011-12-07T23:06:05Z,2011-12-12T04:09:43Z,102,Enable rolling_corr to take DataFrame + Series
+463,closed,2011-12-07T23:29:01Z,2011-12-07T23:35:54Z,1,Yahoo quote
+464,closed,2011-12-08T23:13:56Z,2012-01-14T20:34:08Z,886,Insert DataFrame rows with dict / other interface
+465,closed,2011-12-09T11:13:43Z,2011-12-12T02:58:34Z,64,DataFrame.applymap(func) issue when func returns tuple
+466,closed,2011-12-09T20:56:39Z,2012-04-05T00:28:29Z,2812,Padding / backfilling for monotonic data
+467,closed,2011-12-09T23:30:29Z,2011-12-10T20:26:45Z,21,Memory leak in 0.6.0
+468,closed,2011-12-11T23:26:02Z,2012-01-06T05:53:33Z,607,Optimize DataFrame.append for block structure
+469,closed,2011-12-11T23:47:42Z,2011-12-12T00:52:25Z,2,Need to exclude NA values with dtype=object in stat methods
+470,closed,2011-12-12T05:34:57Z,2016-09-29T22:14:25Z,42089,Use OpenMP for computing pairwise correlations
+471,closed,2011-12-12T07:46:39Z,2011-12-12T15:30:09Z,8,ImportError: No module named sparse.api
+472,closed,2011-12-12T09:38:19Z,2012-10-15T18:30:25Z,7401,pandas: python remote engine crashes at object introspection of DataFrame instance Optionen
+473,closed,2011-12-12T19:14:18Z,2011-12-12T19:56:19Z,1,Issue modifying data in object arrays in DataFrame
+474,closed,2011-12-12T19:29:36Z,2011-12-12T20:17:24Z,1,Add inplace option to DataFrame.consolidate
+475,closed,2011-12-12T20:45:34Z,2011-12-12T20:59:22Z,1,DataFrame constructor bug from single Series with different Index
+476,closed,2011-12-12T21:56:47Z,2011-12-29T03:21:12Z,390,DataFrame.delevel improvements
+477,closed,2011-12-12T22:56:57Z,2012-01-09T22:40:39Z,672,Enable unstack to create Series (currently raises Exception)
+478,closed,2011-12-12T23:29:44Z,2011-12-13T22:28:15Z,23,More helpful error message when DataFrame.plot fails on some column
+479,closed,2011-12-13T01:43:45Z,2012-01-06T05:53:54Z,581,Add method for concatenating / appending multiple DataFrames
+480,closed,2011-12-13T01:53:11Z,2014-02-18T01:42:24Z,19152,Function for flattening MultiIndex
+481,closed,2011-12-13T02:11:04Z,2011-12-13T20:00:31Z,18,Bug: handle MultiIndex names in concatenation step of GroupBy.apply
+482,closed,2011-12-13T03:53:34Z,2011-12-13T18:51:27Z,15,Add Series.from_csv with some tests
+483,closed,2011-12-13T13:41:10Z,2012-04-23T16:06:47Z,3171,should asfreq return future dates as well?
+484,closed,2011-12-13T18:08:37Z,2011-12-13T19:36:02Z,2,Type inference with list of lists in DataFrame constructor
+485,closed,2011-12-13T18:48:39Z,2011-12-13T21:55:43Z,4,Cython required on install
+486,closed,2011-12-14T09:48:57Z,2011-12-15T17:22:57Z,32,exception joining dataframes with different datatypes
+487,closed,2011-12-14T16:48:19Z,2011-12-15T04:23:28Z,12,nanops on datetime objects failing
+488,closed,2011-12-14T18:56:00Z,2011-12-15T17:38:22Z,23,Exception calling to_string on empty Series
+489,closed,2011-12-14T18:59:52Z,2011-12-15T04:40:17Z,10,Series.to_string Always Prints Length
+490,closed,2011-12-14T19:49:16Z,2011-12-15T20:13:46Z,25,can't print embedded ndarray
+491,closed,2011-12-14T23:13:22Z,2011-12-15T04:05:07Z,5,Cannot instantiate DataFrame with
+492,closed,2011-12-15T08:52:27Z,2011-12-15T17:53:24Z,10,Saving DataFrame with tuple index to HDFStore fails
+493,closed,2011-12-15T14:05:50Z,2011-12-15T14:09:04Z,1,"Series.to_string() no longer adds length, reflect this change also in unittest"
+494,closed,2011-12-15T14:14:14Z,2011-12-15T17:06:47Z,3,Series.to_string() unittest fix
+495,closed,2011-12-15T15:46:25Z,2011-12-15T17:04:54Z,2,invalid dtype access crashes interpreter (segfault)
+496,closed,2011-12-16T01:33:24Z,2011-12-17T21:32:20Z,44,Cython python function aggregation optimization
+497,closed,2011-12-16T18:35:02Z,2011-12-18T05:29:59Z,35,Better error messages
+498,closed,2011-12-16T21:56:17Z,2011-12-18T07:35:51Z,34,Handle differently-indexed output in DataFrame.apply
+499,closed,2011-12-16T22:00:11Z,2016-09-29T22:09:57Z,41977,"Clean up legacy issues in MultiIndex, have to break pickles"
+500,closed,2011-12-16T22:20:41Z,2011-12-17T18:03:57Z,20,Adding DataFrames with offsets yields naive index
+501,closed,2011-12-17T17:38:00Z,2011-12-17T18:01:28Z,1,Handle passing Index.name in union
+502,closed,2011-12-19T04:26:17Z,2012-05-12T18:30:31Z,3495,Add R-like match function to API
+503,closed,2011-12-19T17:55:28Z,2011-12-20T03:19:41Z,10,Master does not compile with MSVC: cannot find stdint.h

@@ -1,0 +1,363 @@
+repo_full_name,repo_created_at,repo_language,issue_number,issue_state,issue_created_at,issue_closed_at,lifetime_days,issue_title
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,8,closed,2010-09-29 19:45:47+00:00,2011-06-23 04:50:05+00:00,266.3779861111111,np.fix doesn't work
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,13,closed,2010-10-07 23:42:34+00:00,2012-12-12 21:35:57+00:00,796.9120717592592,Add PyTable Paths to HDFStore
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,17,closed,2010-10-12 16:13:55+00:00,2011-07-08 22:15:57+00:00,269.251412037037,Better support for mixed-type data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,18,closed,2010-10-12 16:15:10+00:00,2011-09-25 05:17:23+00:00,347.5432060185185,weights option may not be working in pandas.stats.ols.OLS
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,39,closed,2011-04-06 00:15:26+00:00,2014-03-09 15:18:34+00:00,1068.627175925926,Adding variable description in DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,40,closed,2011-05-01 17:31:45+00:00,2011-06-28 03:09:55+00:00,57.40150462962963,Create generic moving window function
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,41,closed,2011-05-01 17:32:55+00:00,2012-01-05 19:04:25+00:00,249.06354166666668,Join methods for WidePanel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,43,closed,2011-05-01 17:58:10+00:00,2011-06-23 04:47:33+00:00,52.45096064814815,HDFStore testing and improvements
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,45,closed,2011-05-20 22:13:31+00:00,2011-06-23 04:17:27+00:00,33.25273148148148,"Importing data using HDFStore with pre-epoch dates; ""ValueError: timestamp out of range for platform localtime()/gmtime() function"""
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,46,closed,2011-05-31 16:51:22+00:00,2011-06-28 00:41:31+00:00,27.326493055555556,Configure pandas like pyzmq so checking in .c files is not necessary
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,47,closed,2011-06-03 08:53:52+00:00,2011-06-14 14:43:51+00:00,11.243043981481481,"Time zone handling in DateRange, etc. using pytz"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,48,closed,2011-06-03 09:08:28+00:00,2011-06-14 14:06:41+00:00,11.207094907407408,"""Proper"" boolean array with NA handling in DataMatrix"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,49,closed,2011-06-03 09:10:29+00:00,2011-06-14 14:06:14+00:00,11.205381944444444,Consistent column ordering in mixed-type DataMatrix
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,50,closed,2011-06-03 10:50:07+00:00,2012-07-12 16:51:03+00:00,405.2506481481482,Better implementation of rolling_max and min
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,52,closed,2011-06-21 15:49:54+00:00,2011-06-23 04:16:33+00:00,1.5185069444444443,Improve fancy indexing when selecting cross-sections
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,53,closed,2011-06-23 04:45:51+00:00,2011-06-23 19:39:40+00:00,0.6207060185185185,Optimized DataFrame.append for block structure if possible
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,60,closed,2011-07-15 23:11:41+00:00,2014-07-30 01:12:20+00:00,1110.0837847222222,Easier subclassing
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,61,closed,2011-07-18 02:15:11+00:00,2011-07-20 19:46:25+00:00,2.730023148148148,DataFrame.__ne__ not implemented
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,62,closed,2011-07-18 15:37:26+00:00,2011-10-02 02:56:19+00:00,75.47144675925927,Add na_omit options to aggregation functions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,63,closed,2011-07-18 15:37:46+00:00,2012-04-12 03:17:15+00:00,268.4857523148148,Unit testing / cleanup of pandas.io.sql
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,64,closed,2011-07-18 15:39:18+00:00,2012-04-05 00:31:26+00:00,261.36953703703705,numpy.datetime64 type integration
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,65,closed,2011-07-18 15:43:35+00:00,2011-11-10 04:08:23+00:00,114.51722222222222,Add dot method to DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,66,closed,2011-07-18 15:45:19+00:00,2011-07-30 18:02:16+00:00,12.095104166666667,Fancy indexing on single column of DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,67,closed,2011-07-18 15:46:39+00:00,2011-10-02 03:26:44+00:00,75.48616898148148,Reindexing Cython code cleanup
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,68,closed,2011-07-18 15:47:17+00:00,2011-11-06 01:46:48+00:00,110.41633101851852,Import plyr-like functionality
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,69,closed,2011-07-18 15:48:30+00:00,2011-09-08 16:42:07+00:00,52.0372337962963,Fancy indexing on WidePanel and n-dimensional version
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,70,closed,2011-07-18 15:49:35+00:00,2011-07-20 19:47:04+00:00,2.1649189814814815,Implement DataFrame.insert method
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,71,closed,2011-07-18 15:50:10+00:00,2011-07-20 19:45:42+00:00,2.1635648148148148,Enable DataFrame constructor to accept structured/record ndarray
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,72,closed,2011-07-18 15:52:21+00:00,2011-09-08 16:39:40+00:00,52.032858796296296,Enable reindex methods to optionally not copy data when they can
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,73,closed,2011-07-18 15:54:10+00:00,2011-10-14 22:18:03+00:00,88.26658564814815,Enable Series objects to optionally have a name associated with them
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,74,closed,2011-07-18 15:54:45+00:00,2011-09-08 16:39:18+00:00,52.0309375,Test coverage for pandas.stats subpackage
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,75,closed,2011-07-18 16:02:37+00:00,2011-08-11 04:12:54+00:00,23.507141203703704,Heterogeneous type handling in LongPanel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,76,closed,2011-07-18 21:00:39+00:00,2011-07-20 03:52:38+00:00,1.286099537037037,Sparse cumsum functions do not work
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,77,closed,2011-07-21 19:32:25+00:00,2011-10-02 02:55:40+00:00,72.3078125,Build error on OS X 10.7: tseries
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,78,closed,2011-07-24 20:08:48+00:00,2011-09-08 16:38:54+00:00,45.85423611111111,Create HierarchicalIndex object to implement multi-level indexing
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,80,closed,2011-07-26 15:41:00+00:00,2011-08-07 16:16:36+00:00,12.024722222222222,Some test data files don't get copied to site-packages
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,81,closed,2011-07-27 23:02:15+00:00,2011-07-31 16:23:24+00:00,3.7230208333333334,bug in DataFrame/DataMatrix toCSV method when index=False
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,84,closed,2011-07-29 16:26:50+00:00,2012-04-05 00:31:20+00:00,250.33645833333333,Create memory-efficient DateIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,85,closed,2011-07-29 22:19:39+00:00,2012-05-07 15:05:18+00:00,282.69836805555553,Enable pandas.core.sparse objects to be stored in HDFStore
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,86,closed,2011-07-30 01:01:42+00:00,2012-01-13 21:17:59+00:00,167.8446412037037,Push some of Series.ix into Series.__getitem__/__setitem__
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,88,closed,2011-08-05 15:46:35+00:00,2011-09-08 16:38:37+00:00,34.036134259259256,"Document panel {sum, mean, ...} methods"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,91,closed,2011-08-07 19:42:03+00:00,2012-01-12 01:03:28+00:00,157.2232060185185,Change sum/mean/count/std/var/etc. to use bottleneck if available
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,92,closed,2011-08-07 20:57:42+00:00,2011-11-13 18:28:29+00:00,97.89637731481481,Enable DataFrame to be sorted by multiple columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,93,closed,2011-08-07 21:01:30+00:00,2011-12-16 01:32:07+00:00,130.18792824074075,Improve Cython multi-groupby code to do aggregation without having to sort the data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,94,closed,2011-08-07 21:08:46+00:00,2011-09-08 16:41:30+00:00,31.814398148148147,Make DataFrame toString formatting use precision set in numpy.set_printoptions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,96,closed,2011-08-09 17:29:47+00:00,2011-09-05 20:28:06+00:00,27.12383101851852,Write Cython function to determine sort order in hierarchical indexes
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,98,closed,2011-08-09 20:53:42+00:00,2011-08-09 22:54:57+00:00,0.0842013888888889,Calling xs on DataFrame with index but no columns raises Exception
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,99,closed,2011-08-09 22:51:30+00:00,2011-08-19 20:11:52+00:00,9.889143518518518,Bring back .groups attribute for GroupBy
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,100,closed,2011-08-10 00:51:55+00:00,2011-08-19 20:12:50+00:00,9.806192129629629,Remove AmbiguousIndexError in fancy indexing
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,101,closed,2011-08-15 17:36:34+00:00,2011-08-16 17:41:19+00:00,1.003298611111111,Enable .drop(...) to work with MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,103,closed,2011-08-17 19:04:13+00:00,2011-11-13 01:11:31+00:00,87.25506944444444,Enable groupby multiple levels (instead of just a single level)
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,104,closed,2011-08-18 21:48:22+00:00,2011-09-29 04:22:46+00:00,41.27388888888889,Implement ndarray.take analog on BlockManager
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,106,closed,2011-08-19 17:04:42+00:00,2011-08-23 02:20:04+00:00,3.3856712962962963,ols should handle a Series (w/ MultiIndex) + LongPanel combo.
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,107,closed,2011-08-22 00:39:43+00:00,2011-09-05 20:23:29+00:00,14.822060185185185,Partial fancy indexing using ints does not work on MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,108,closed,2011-08-24 03:45:52+00:00,2011-12-29 05:21:19+00:00,127.06628472222222,Does LongPanel need to exist?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,109,closed,2011-08-24 19:15:09+00:00,2011-11-10 04:08:42+00:00,77.37052083333333,Enable sum/mean/std etc. on DataFrame to work on multi-level data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,110,closed,2011-08-24 19:23:32+00:00,2011-12-02 22:02:04+00:00,100.1100925925926,"Review DataFrame.{sum,mean,min,max,product,std,...} for behavior in the all-NA case"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,111,closed,2011-08-25 18:46:29+00:00,2011-09-08 16:41:46+00:00,13.913391203703704,"Store level naming information in MultiIndex, for groupby, cross-tabulation, etc."
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,112,closed,2011-08-25 18:48:29+00:00,2011-09-06 04:14:42+00:00,11.39320601851852,.stack() does not yet work when MultiIndex already present
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,113,closed,2011-08-25 18:49:08+00:00,2012-09-18 13:27:30+00:00,389.77664351851854,Enhance droplevel integration when MultiIndex present
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,114,closed,2011-08-25 18:49:39+00:00,2011-12-13 00:55:45+00:00,109.25423611111111,"Implement ""margins"" for pivot table / cross-tabulation support"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,115,closed,2011-08-28 00:16:21+00:00,2012-01-05 22:02:32+00:00,130.90707175925925,Enable .join methods for DataFrame / WidePanel to join multiple objects at once
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,118,closed,2011-09-01 19:48:56+00:00,2011-09-09 01:53:51+00:00,7.253414351851852,Implement fancy indexing on WidePanel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,119,closed,2011-09-01 19:50:13+00:00,2011-09-08 02:01:25+00:00,6.257777777777778,Rename WidePanel to simply Panel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,120,closed,2011-09-02 20:11:06+00:00,2011-09-05 20:39:52+00:00,3.019976851851852,Sortedness problems with MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,121,closed,2011-09-02 20:15:36+00:00,2011-09-05 20:18:30+00:00,3.002013888888889,Write / integrate Cython sortedness check in MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,122,closed,2011-09-03 22:51:01+00:00,2011-10-02 02:57:22+00:00,28.17107638888889,Implement faster IntIndex class
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,123,closed,2011-09-04 02:07:02+00:00,2016-01-14 21:28:48+00:00,1593.8067824074074,"Enable groupby to be used on ndarrays, record arrays"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,124,closed,2011-09-05 20:00:39+00:00,2011-09-05 20:17:56+00:00,0.012002314814814815,Get view when selecting from hierarchical columns in DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,125,closed,2011-09-05 22:07:23+00:00,2011-10-02 02:54:19+00:00,26.19925925925926,Enable shallow copy of BlockManager
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,126,closed,2011-09-06 15:20:44+00:00,2011-09-08 03:57:15+00:00,1.5253587962962962,Add add_prefix/suffix methods to DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,127,closed,2011-09-06 15:48:58+00:00,2011-09-06 15:52:20+00:00,0.002337962962962963,timeRule -> time_rule renaming + deprecation warnings
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,128,closed,2011-09-06 17:23:12+00:00,2011-09-08 03:07:23+00:00,1.4056828703703703,Objects with hierarchical index cannot be saved using HDFStore
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,131,closed,2011-09-08 22:32:28+00:00,2011-09-09 03:07:28+00:00,0.1909722222222222,GroupBy.apply can't yield Series with DataFrame input
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,132,closed,2011-09-08 22:34:50+00:00,2011-09-09 04:47:36+00:00,0.25886574074074076,"Enable GroupBy agg/transform/apply to take *args, **kwargs"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,133,closed,2011-09-09 02:27:47+00:00,2011-09-09 02:55:30+00:00,0.019247685185185184,Multi-key groupby fails with multiple functions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,134,closed,2011-09-13 01:27:21+00:00,2012-03-13 22:15:52+00:00,182.86702546296297,Partial multiple selection in advanced indexing
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,135,closed,2011-09-13 01:30:09+00:00,2011-09-20 16:30:48+00:00,7.625451388888889,Setting single column in mixed type frame throws exception
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,138,closed,2011-09-14 16:26:08+00:00,2011-09-22 13:45:44+00:00,7.8886111111111115,DataFrame repr fails if a column contains tuples
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,144,closed,2011-09-16 03:21:33+00:00,2011-09-22 15:59:55+00:00,6.526643518518519,DataFrame.corrwith fails with object columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,145,closed,2011-09-16 03:21:44+00:00,2011-09-29 01:16:20+00:00,12.912916666666666,Add dtypes property to DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,147,closed,2011-09-17 01:19:26+00:00,2011-09-20 15:38:48+00:00,3.5967824074074075,Sortlevel / pivot may silently misalign data with duplicate labels
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,150,closed,2011-09-17 14:52:11+00:00,2011-09-25 21:39:33+00:00,8.282893518518518,Document swaplevel method
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,152,closed,2011-09-17 21:36:13+00:00,2012-04-06 03:31:01+00:00,201.2463888888889,Write fast OHLC aggregator
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,153,closed,2011-09-17 21:37:07+00:00,2012-05-01 18:56:10+00:00,226.88822916666666,"Implement custom ""grouper"" class"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,154,closed,2011-09-17 21:37:51+00:00,2011-09-20 15:52:17+00:00,2.7600231481481483,Series.shift fails on integer arrays due to NaN handling
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,155,closed,2011-09-18 01:44:00+00:00,2011-10-14 04:39:36+00:00,26.121944444444445,Weights option should be removed in OLS classes
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,156,closed,2011-09-18 22:18:44+00:00,2012-02-09 16:26:14+00:00,143.75520833333334,Integrate openpyxl into pandas.io.parsers
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,157,closed,2011-09-18 23:43:14+00:00,2011-10-02 02:47:02+00:00,13.127638888888889,Implement optimized DataFrame.join and reindex methods for ordered time series data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,158,closed,2011-09-19 18:11:17+00:00,2011-12-12 20:00:13+00:00,84.07564814814815,Implement no copy item deletion in BlockManager
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,159,closed,2011-09-19 23:09:12+00:00,2012-03-13 20:41:30+00:00,175.89743055555556,Add level keyword to .drop method
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,160,closed,2011-09-20 01:05:12+00:00,2011-09-22 15:22:03+00:00,2.595034722222222,as_index in GroupBy does not work properly with a single key
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,161,closed,2011-09-20 15:55:00+00:00,2011-10-22 03:17:52+00:00,31.474212962962962,Document combine_first and any related methods
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,162,closed,2011-09-21 16:03:43+00:00,2014-04-25 14:26:32+00:00,946.932511574074,Speed optimization: Block do not use their own Index objects
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,163,closed,2011-09-21 16:05:33+00:00,2016-01-14 21:29:18+00:00,1576.224826388889,Move Block internals code to Cython
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,164,closed,2011-09-22 14:05:38+00:00,2011-11-07 05:28:11+00:00,45.640659722222225,Add name/names field to Index and integrate
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,165,closed,2011-09-22 14:25:21+00:00,2011-09-25 21:47:27+00:00,3.3070138888888887,Document CSV/table -> DataFrame with MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,166,closed,2011-09-22 15:05:29+00:00,2012-01-12 02:32:02+00:00,111.47677083333333,Implement multiple-function aggregation with DataFrame in groupby
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,168,closed,2011-09-22 19:41:56+00:00,2011-09-25 05:16:37+00:00,2.399085648148148,DateRange.copy bug
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,169,closed,2011-09-23 18:56:20+00:00,2011-09-25 04:55:27+00:00,1.4160532407407407,issue moving from 0.3.0 to v0.4.0
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,170,closed,2011-09-25 14:53:47+00:00,2012-01-16 17:48:15+00:00,113.12115740740741,Implement frequency table function a la table in R
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,171,closed,2011-09-25 15:04:15+00:00,2012-07-12 20:59:01+00:00,291.2463657407407,Add Panel.dropna method of some kind
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,172,closed,2011-09-25 15:28:08+00:00,2011-10-15 20:43:35+00:00,20.2190625,SparseSeries.__add__ perf bad with large # of blocks
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,173,closed,2011-09-25 15:38:55+00:00,2011-12-12 04:40:04+00:00,77.54246527777778,Implement sparse array / accumulator object
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,174,closed,2011-09-25 15:43:16+00:00,2012-03-14 20:14:47+00:00,171.18855324074073,Add axis= keyword to DataFrame.fillna
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,175,closed,2011-09-25 15:53:28+00:00,2011-11-06 01:44:27+00:00,41.41040509259259,prettytable library integration for nice console output
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,176,closed,2011-09-25 16:30:03+00:00,2011-09-29 01:06:12+00:00,3.3584375,Join general speed optimizations
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,177,closed,2011-09-26 20:20:13+00:00,2011-09-27 04:03:41+00:00,0.32185185185185183,Write Cython code generation for take routines once stabilized
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,178,closed,2011-09-27 04:30:31+00:00,2011-10-01 20:30:39+00:00,4.666759259259259,DateRange.union speed shortcuts don't work in some cases
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,179,closed,2011-09-27 08:19:17+00:00,2012-04-22 02:11:51+00:00,207.74483796296298,Pre-epoch dates giving OverflowError in mktime with HDFStore
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,180,closed,2011-09-27 10:22:30+00:00,2011-10-04 15:51:00+00:00,7.228125,import pandas
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,181,closed,2011-09-28 02:32:20+00:00,2011-10-01 19:56:43+00:00,3.7252662037037036,as_index in GroupBy still not fully implemented
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,182,closed,2011-09-28 15:03:45+00:00,2011-10-01 19:24:10+00:00,3.1808449074074074,DataFrame to_csv() ignores nanRep argument for float32 input
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,184,closed,2011-09-29 01:29:57+00:00,2012-05-15 00:15:43+00:00,228.94844907407406,Consistently set group name on groupby groups
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,185,closed,2011-09-29 01:31:48+00:00,2011-09-30 01:05:08+00:00,0.9814814814814815,Advanced indexing .ix does not handle step with integer labels
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,187,closed,2011-09-30 01:11:13+00:00,2011-10-01 01:41:57+00:00,1.0213425925925925,notnull very slow compared with 0.3.0
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,188,closed,2011-10-01 00:36:41+00:00,2011-10-02 02:46:03+00:00,1.0898379629629629,Add method to MultiIndex for retrieving level values
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,189,closed,2011-10-01 01:02:14+00:00,2011-12-12 05:20:53+00:00,72.17961805555555,Add fast pairwise rolling correlation function
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,190,closed,2011-10-01 02:16:55+00:00,2012-04-22 02:14:24+00:00,203.9982523148148,pytz integration with fast local tz conversions with datetime64 dtype
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,191,closed,2011-10-02 03:33:45+00:00,2013-09-22 16:07:19+00:00,721.5233101851852,SQLalchemy interface in pandas.io
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,192,closed,2011-10-02 13:35:17+00:00,2012-01-06 05:22:04+00:00,95.65748842592592,setupegg.py develop won't invoke Cython
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,193,closed,2011-10-02 16:06:48+00:00,2011-10-03 01:36:51+00:00,0.39586805555555554,Add out argument to common.take_1d
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,194,closed,2011-10-04 07:06:35+00:00,2011-11-14 03:10:39+00:00,40.836157407407406,adding covariance to dataframe
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,196,closed,2011-10-04 13:42:05+00:00,2011-10-09 17:41:35+00:00,5.1663194444444445,summary() method to all pandas objects.
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,197,closed,2011-10-04 15:49:48+00:00,2011-10-06 15:57:23+00:00,2.005266203703704,Raise SkipTest if no xlrd
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,199,closed,2011-10-06 18:25:09+00:00,2011-10-09 17:36:26+00:00,2.9661689814814816,MultiIndex with single level does not work
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,201,closed,2011-10-06 18:57:04+00:00,2011-10-06 21:24:33+00:00,0.10241898148148149,".append drops MultiIndex, .join not supported for MultiIndex"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,202,closed,2011-10-06 20:26:31+00:00,2011-10-06 20:46:52+00:00,0.014131944444444445,.sortlevel does not retain .names in MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,203,closed,2011-10-07 11:55:26+00:00,2011-10-09 16:52:47+00:00,2.2064930555555557,Expose isnull and notnull as methods
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,204,closed,2011-10-07 18:30:04+00:00,2011-10-07 19:18:07+00:00,0.033368055555555554,HDFStore chokes on writing empty LongPanel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,205,closed,2011-10-08 20:25:44+00:00,2011-10-09 14:25:43+00:00,0.749988425925926,Sparse speed optimization
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,207,closed,2011-10-08 23:47:24+00:00,2012-05-21 18:12:22+00:00,225.76733796296296,"Add inplace option to many DataFrame, etc. methods"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,208,closed,2011-10-09 14:11:38+00:00,2012-04-13 01:45:48+00:00,186.4820601851852,Datetime string parser integration with Index class
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,210,closed,2011-10-09 17:43:57+00:00,2011-11-10 04:10:30+00:00,31.435104166666665,Add some kind of describe-like / summary ability for non-numeric data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,211,closed,2011-10-10 01:37:35+00:00,2011-10-11 20:13:30+00:00,1.7749421296296297,Refactor internals.join_managers to reduce overhead in homogeneous case
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,212,closed,2011-10-10 03:16:22+00:00,2011-10-13 04:17:16+00:00,3.042291666666667,Optimize nested dict -> DataFrame conversions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,214,closed,2011-10-11 17:54:16+00:00,2011-10-11 19:39:18+00:00,0.07293981481481482,Add multi-key join capability
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,215,closed,2011-10-11 17:55:08+00:00,2011-10-12 14:35:57+00:00,0.8616782407407407,Speed enhancements in DataFrame.xs
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,216,closed,2011-10-11 18:04:43+00:00,2012-05-07 15:03:33+00:00,208.87418981481483,Add method argument to align functions for forward/backfilling
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,217,closed,2011-10-11 18:26:51+00:00,2012-12-03 15:10:28+00:00,418.8636226851852,Micro-optimizations in DataFrame for tracking state of internal consolidation
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,218,closed,2011-10-11 18:59:45+00:00,2012-01-05 01:45:53+00:00,85.28203703703704,Optimize BlockManager.join_on for special types
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,219,closed,2011-10-11 20:12:16+00:00,2011-11-14 03:08:56+00:00,33.289351851851855,See if possible to optimize multi-key joining beyond its current state
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,220,closed,2011-10-11 21:09:08+00:00,2011-12-31 00:16:27+00:00,80.13008101851852,Implement outer/inner/right join logic when joining on a key
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,221,closed,2011-10-12 00:40:07+00:00,2011-10-12 00:40:30+00:00,0.0002662037037037037,xts-like string date indexing shorthand
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,222,closed,2011-10-12 00:40:07+00:00,2012-04-23 04:59:26+00:00,194.1800810185185,xts-like string date indexing shorthand
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,223,closed,2011-10-12 00:52:33+00:00,2011-10-14 13:41:24+00:00,2.533923611111111,Groupby level name
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,224,closed,2011-10-12 12:03:52+00:00,2011-10-12 15:04:10+00:00,0.12520833333333334,Plotting series (columns) fails
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,225,closed,2011-10-12 14:19:49+00:00,2011-10-12 18:54:16+00:00,0.1905902777777778,read_csv interprets index column as dates
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,227,closed,2011-10-12 18:54:45+00:00,2011-10-13 03:28:23+00:00,0.3566898148148148,Document recent updates to parser functions and API changes in sphinx docs
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,229,closed,2011-10-13 03:33:21+00:00,2011-10-14 22:13:06+00:00,1.7776041666666667,Remove deprecations from 0.3-0.4 for 0.5 release
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,230,closed,2011-10-13 13:43:29+00:00,2011-10-14 04:11:38+00:00,0.6028819444444444,Register the DataFrame type with `IPython.utils.generic.complete_object`
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,231,closed,2011-10-13 13:45:18+00:00,2011-10-15 19:20:41+00:00,2.2329050925925924,Objects indexed by datetime.date can't be stored in HDFStore
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,232,closed,2011-10-13 16:11:54+00:00,2011-10-14 21:49:30+00:00,1.2344444444444445,to_string() returning None
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,234,closed,2011-10-14 02:12:17+00:00,2011-10-21 17:42:44+00:00,7.646145833333334,Write nice user-facing pivot table creation function
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,236,closed,2011-10-14 12:40:38+00:00,2013-09-25 20:08:12+00:00,712.3108101851852,Add Float64Index class?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,237,closed,2011-10-14 21:01:49+00:00,2011-10-14 21:15:38+00:00,0.009594907407407408,Groupby apply mixed-type casting problem
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,238,closed,2011-10-14 22:28:24+00:00,2011-10-15 18:53:42+00:00,0.8509027777777778,Joining with empty DataFrame on outer breaks
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,239,closed,2011-10-15 19:36:07+00:00,2011-10-15 19:52:37+00:00,0.011458333333333333,Enable creation of empty Panel objects
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,240,closed,2011-10-15 22:40:50+00:00,2011-10-19 22:22:19+00:00,3.9871412037037035,Add unique value counter method to Series / DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,242,closed,2011-10-16 22:55:48+00:00,2011-10-21 04:32:49+00:00,4.234039351851852,Add nrows argument and chunking iterator to file parsers
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,243,closed,2011-10-17 03:30:32+00:00,2011-10-21 18:10:54+00:00,4.611365740740741,Add rename function on Panel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,245,closed,2011-10-17 16:13:36+00:00,2016-12-31 00:32:21+00:00,1901.3463541666667,Add ad-hoc indexing to DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,246,closed,2011-10-18 18:22:23+00:00,2011-10-18 18:31:50+00:00,0.0065625,DataFrame.join on key with single key failure
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,247,closed,2011-10-18 18:40:52+00:00,2011-10-19 22:22:35+00:00,1.1539699074074075,Add histogram / unique counter function to Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,248,closed,2011-10-18 18:42:03+00:00,2011-10-18 19:47:53+00:00,0.045717592592592594,"Add ""inner join"" option for DataFrame"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,249,closed,2011-10-18 18:43:08+00:00,2011-12-31 00:16:45+00:00,73.23167824074073,Add join / merge functionality for non-uniquely keyed data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,250,closed,2011-10-18 18:58:47+00:00,2011-10-19 21:21:07+00:00,1.0988425925925926,"Add helpful warning/error message when calling ""import pandas"" from source directory"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,251,closed,2011-10-18 19:12:20+00:00,2011-10-18 20:59:19+00:00,0.07429398148148147,Subplots error when DataFrame column contains all null values
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,252,closed,2011-10-18 19:36:14+00:00,2011-10-19 21:07:19+00:00,1.0632523148148147,Casting float column to int does not work
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,253,closed,2011-10-18 19:39:08+00:00,2011-10-18 22:08:01+00:00,0.10339120370370371,Enable select list of DataFrame columns from __getitem__
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,255,closed,2011-10-19 14:39:56+00:00,2016-01-14 21:30:08+00:00,1548.284861111111,Use Cython fused types
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,256,closed,2011-10-19 14:40:34+00:00,2011-10-20 22:44:23+00:00,1.3359837962962964,Faster count function
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,257,closed,2011-10-19 15:40:45+00:00,2011-10-19 17:27:28+00:00,0.0741087962962963,Specifying names should make header=None by default in read_table
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,258,closed,2011-10-19 16:06:23+00:00,2011-10-19 17:27:37+00:00,0.05641203703703704,read_table will modify passed names if index_col is not None
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,260,closed,2011-10-20 12:19:18+00:00,2011-10-21 04:32:09+00:00,0.6755902777777778,MultiIndex.diff not implemented and drops through to Index.diff
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,261,closed,2011-10-20 13:18:21+00:00,2011-10-21 04:32:32+00:00,0.6348495370370371,Make & and | call intersection/union on Index objects
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,262,closed,2011-10-20 15:11:40+00:00,2011-10-20 22:54:13+00:00,0.32121527777777775,Index names lost when calling sort_index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,265,closed,2011-10-20 18:11:03+00:00,2011-10-20 22:44:05+00:00,0.1896064814814815,Rename Series.histogram -> value_counts and sort descending
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,266,closed,2011-10-20 21:29:41+00:00,2011-10-24 18:28:54+00:00,3.8744560185185186,Add convenience method for adding index from record-like DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,267,closed,2011-10-20 21:58:24+00:00,2011-12-31 00:16:57+00:00,71.09621527777777,Implement true SQL-style joins
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,268,closed,2011-10-21 04:42:01+00:00,2011-10-22 01:58:56+00:00,0.8867476851851852,"Add general load/save functions to pandas.* namespace, and update docs"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,269,closed,2011-10-21 04:55:54+00:00,2013-07-29 03:07:44+00:00,646.9248842592592,Promote modules out of core?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,270,closed,2011-10-21 16:02:13+00:00,2011-10-21 17:13:58+00:00,0.04982638888888889,Series constructor fails on list of tuples
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,271,closed,2011-10-21 18:35:53+00:00,2011-10-22 02:14:02+00:00,0.3181597222222222,Add pyx dependencies for tseries.pyx
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,272,closed,2011-10-21 19:18:36+00:00,2011-10-22 02:23:20+00:00,0.2949537037037037,Change Series.clip to work with numpy.clip
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,273,closed,2011-10-21 20:00:21+00:00,2012-01-06 05:54:18+00:00,76.41246527777778,Add optimized multiple-join / concatenation functions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,274,closed,2011-10-21 21:30:59+00:00,2011-10-22 02:43:49+00:00,0.21724537037037037,Decide what to do about DataFrame.from_csv default options
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,275,closed,2011-10-21 23:16:58+00:00,2011-10-21 23:30:54+00:00,0.009675925925925926,nanRep argument deprecation + FutureWarning
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,276,closed,2011-10-22 00:42:27+00:00,2011-10-22 02:18:41+00:00,0.06682870370370371,Make sure DataFrame.append is equivalent to rbind_fill for different columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,277,closed,2011-10-22 01:24:29+00:00,2011-10-22 02:38:37+00:00,0.05148148148148148,Do something about NA values in Series.value_counts and describe on object arrays
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,279,closed,2011-10-23 00:25:14+00:00,2011-10-24 16:23:48+00:00,1.6656712962962963,Add level names to Series.__repr__
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,280,closed,2011-10-23 01:55:10+00:00,2011-10-24 17:58:29+00:00,1.6689699074074074,Check for duplicate index names or None in MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,281,closed,2011-10-23 17:10:08+00:00,2011-11-06 01:43:04+00:00,13.356203703703704,Refactor Series to_string / repr-related methods to be cleaner
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,283,closed,2011-10-24 05:14:54+00:00,2011-10-24 16:23:33+00:00,0.46434027777777775,Test Index.append when passing empty list
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,285,closed,2011-10-24 19:00:45+00:00,2011-10-25 01:35:04+00:00,0.27383101851851854,Investigate erroneous int conversion in MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,289,closed,2011-10-25 18:08:19+00:00,2011-11-02 05:48:37+00:00,7.486319444444445,Add fast API function to filter using a set of values
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,290,closed,2011-10-26 00:56:05+00:00,2011-10-26 01:14:10+00:00,0.01255787037037037,DataFrame.to_csv throws exception
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,291,closed,2011-10-26 01:39:36+00:00,2011-11-05 00:53:26+00:00,9.967939814814814,"Add skipfooter option to read_{csv,table}"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,292,closed,2011-10-26 04:09:46+00:00,2012-06-05 19:38:42+00:00,223.6450925925926,Add support for ordered factors and groupby handling
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,293,closed,2011-10-26 13:52:34+00:00,2011-11-04 20:04:21+00:00,9.258182870370371,DataFrame constructor fails on list of tuples
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,297,closed,2011-10-26 16:25:32+00:00,2011-11-16 09:04:32+00:00,20.69375,"Add ""count distinct"" function, useful for groupby"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,298,closed,2011-10-26 23:32:05+00:00,2011-11-04 20:27:55+00:00,8.872106481481481,Raise more helpful Exception if dateutil.parser fails in DateRange
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,299,closed,2011-10-26 23:49:10+00:00,2011-11-04 20:35:35+00:00,8.86556712962963,Improve performance of groupby on MultiIndex'd data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,300,closed,2011-10-27 04:01:48+00:00,2011-11-14 18:57:51+00:00,18.622256944444445,Add function to read DataFrame from clipboard across platforms
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,301,closed,2011-10-27 04:20:59+00:00,2011-11-14 01:15:06+00:00,17.87091435185185,Alternate constructor for dict of DataFrame -> Panel that doesn't nuke type information
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,302,closed,2011-10-27 04:36:26+00:00,2011-12-12 04:48:23+00:00,46.00829861111111,"Add DataFrame ""type inference"" function for casting object arrays to a more appropriate type"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,303,closed,2011-10-27 14:21:14+00:00,2011-11-08 04:33:05+00:00,11.5915625,Add back proper rolling WLS / panel WLS
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,304,closed,2011-10-27 14:45:53+00:00,2011-10-28 15:13:43+00:00,1.0193287037037038,Cannot fill inserted column of NaNs
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,305,closed,2011-10-27 19:36:55+00:00,2011-11-04 22:23:26+00:00,8.115636574074074,Print hierarchical index names in Series.__repr__
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,306,closed,2011-10-28 16:45:30+00:00,2011-11-05 01:32:57+00:00,7.366284722222222,Document DataFrame.set_index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,308,closed,2011-10-30 22:22:34+00:00,2011-11-07 00:47:31+00:00,7.100659722222222,Should return DataFrame in Series.groupby when as_index=False
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,309,closed,2011-10-31 01:26:56+00:00,2011-11-13 23:17:03+00:00,13.909803240740741,"Implement fast Cython Series iterator, for speeding up DataFrame.apply"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,310,closed,2011-10-31 02:34:05+00:00,2011-11-02 19:11:23+00:00,2.6925694444444446,Deprecation warning in __init__.py
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,311,closed,2011-11-01 00:42:23+00:00,2011-11-04 22:19:15+00:00,3.9006018518518517,aggregate_item_by_item does not handle as_index=False in GroupBy
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,312,closed,2011-11-01 14:55:53+00:00,2011-11-04 20:11:00+00:00,3.2188310185185185,Enable passing vector to on argument in DataFrame.join
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,314,closed,2011-11-01 18:56:52+00:00,2011-11-03 21:31:38+00:00,2.107476851851852,Series.apply() does not always return a Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,315,closed,2011-11-01 19:56:01+00:00,2011-11-03 21:19:25+00:00,2.057916666666667,Support boolean data in Cythonized groupby
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,316,closed,2011-11-01 21:10:07+00:00,2011-12-24 21:37:14+00:00,53.01883101851852,Raise warning or exception when calling Series.sort when do not own data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,317,closed,2011-11-01 21:19:23+00:00,2011-11-03 21:39:18+00:00,2.0138310185185184,Don't show Series.name if it's None
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,318,closed,2011-11-01 21:20:42+00:00,2011-11-04 20:12:29+00:00,2.9526273148148148,Fix DataFrame.join docs to note that a Series with a name can be passed
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,319,closed,2011-11-01 23:20:43+00:00,2011-11-07 02:43:57+00:00,5.1411342592592595,Add new function to remove duplicate rows from a DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,322,closed,2011-11-02 18:05:41+00:00,2012-04-10 05:07:38+00:00,159.4596875,Round trip from CSV to CSV should leave data types unaltered
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,323,closed,2011-11-02 18:34:47+00:00,2011-11-05 00:00:46+00:00,2.226377314814815,[BUG] DataFrame.describe fails if no numeric columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,324,closed,2011-11-02 20:30:48+00:00,2011-11-03 21:04:37+00:00,1.0234837962962964,add legend to DataFrame.plot()
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,325,closed,2011-11-02 21:17:27+00:00,2011-11-05 00:32:56+00:00,2.1357523148148148,to_string on DataFrame may print column labels in the wrong order
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,326,closed,2011-11-02 21:57:40+00:00,2011-11-03 21:03:07+00:00,0.9621180555555555,DataFrame.plot with legend fails when the columns are integers
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,327,closed,2011-11-02 21:58:12+00:00,2011-11-03 21:45:22+00:00,0.991087962962963,Investigate why numpy.unique is so slow on Series input
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,328,closed,2011-11-03 12:44:21+00:00,2012-01-07 01:29:06+00:00,64.53107638888889,Fundamental issue with ix
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,329,closed,2011-11-03 21:25:02+00:00,2011-11-05 01:08:44+00:00,1.1553472222222223,[Bug] pandas.io.data.DataReader Yahoo dates bug
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,331,closed,2011-11-04 16:36:19+00:00,2011-11-04 16:43:36+00:00,0.0050578703703703706,DataFrame.join fails with unconsolidated inputs
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,333,closed,2011-11-04 17:49:42+00:00,2011-11-04 22:56:24+00:00,0.2129861111111111,Add float_format option to Series.to_string
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,337,closed,2011-11-05 03:59:53+00:00,2011-11-06 23:03:50+00:00,1.7944097222222222,DataFrame.min/max do not support mixed-type frames currently
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,338,closed,2011-11-05 22:46:20+00:00,2012-01-12 19:53:28+00:00,67.8799537037037,Implement label-based fancy indexing analogue for DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,339,closed,2011-11-05 22:59:05+00:00,2011-11-13 23:45:30+00:00,8.032233796296296,Add function to infer better dtypes for DataFrame columns of object dtype
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,340,closed,2011-11-06 01:42:04+00:00,2012-01-25 23:21:18+00:00,80.90224537037037,See if it's possible to have somewhat sensible unicode handling
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,341,closed,2011-11-06 21:23:48+00:00,2011-11-07 01:15:13+00:00,0.1607060185185185,Use faster count_level_1d function in DataFrame too
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,342,closed,2011-11-07 00:40:35+00:00,2011-12-19 05:21:30+00:00,42.19508101851852,Enable easier transformations of multiple columns in DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,343,closed,2011-11-07 06:26:29+00:00,2011-11-08 05:14:54+00:00,0.9502893518518518,Add converters argument to read_csv a la np.loadtxt
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,346,closed,2011-11-07 16:37:40+00:00,2011-11-08 04:46:30+00:00,0.5061342592592593,Raise more helpful ImportError if dateutil 2.0 installed on Python 2.x
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,347,closed,2011-11-07 16:41:38+00:00,2011-11-08 04:30:37+00:00,0.49234953703703704,"Implement logical operators on DataFrame, &, |, ^, ~"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,349,closed,2011-11-08 04:57:10+00:00,2011-11-08 05:22:20+00:00,0.01747685185185185,index_col argument in read_csv may not respect order given
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,350,closed,2011-11-08 09:56:11+00:00,2012-05-14 15:05:24+00:00,188.2147337962963,Conversion of DataFrame to R's data.frame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,351,closed,2011-11-08 21:34:02+00:00,2011-11-10 03:17:05+00:00,1.2382291666666667,.join works incorrectly with MultiIndex (data is not actually alligned)
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,352,closed,2011-11-09 10:48:44+00:00,2011-11-10 01:50:25+00:00,0.6261689814814815,Badly-formatted hashbang in setup.py
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,353,closed,2011-11-09 21:49:54+00:00,2011-11-10 02:09:06+00:00,0.18,str + Series does not yield expected result
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,357,closed,2011-11-10 21:23:56+00:00,2011-11-11 20:50:49+00:00,0.9770023148148148,Add Fast DataFrame constructor from records (list of tuples)
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,358,closed,2011-11-10 21:50:56+00:00,2011-11-11 18:37:45+00:00,0.8658449074074074,Single column groupby does not set name
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,359,closed,2011-11-11 14:13:36+00:00,2011-11-11 17:23:27+00:00,0.13184027777777776,creating Panel from dict of DataFrames loses dtypes
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,360,closed,2011-11-13 01:15:27+00:00,2011-11-13 04:28:35+00:00,0.13412037037037036,"Add fast methods for getting and putting single elements in DataFrame, Panel"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,361,closed,2011-11-13 02:00:31+00:00,2011-11-13 04:25:34+00:00,0.10072916666666666,Move caching decorators to Cython for speed
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,363,closed,2011-11-14 08:01:51+00:00,2011-11-22 16:50:33+00:00,8.367152777777777,"GroupBy Series with name field set, should pass on name"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,364,closed,2011-11-14 18:59:02+00:00,2011-11-17 18:26:12+00:00,2.977199074074074,Support separators with > 1 character and regular expressions in read_table
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,366,closed,2011-11-15 11:09:50+00:00,2011-11-16 08:35:13+00:00,0.8926273148148148,Traceback when calling df.as_matrix()
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,367,closed,2011-11-15 15:53:22+00:00,2011-11-16 08:50:45+00:00,0.7065162037037037,Exception Joining DataFrames and Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,368,closed,2011-11-15 21:56:19+00:00,2011-11-23 17:41:20+00:00,7.82292824074074,DataFrame.boxplot fixes
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,370,closed,2011-11-16 06:10:39+00:00,2011-11-17 09:01:05+00:00,1.1183564814814815,Add ability to stack/unstack multiple levels at once
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,371,closed,2011-11-16 10:54:19+00:00,2012-01-16 22:00:56+00:00,61.46292824074074,Wildcard for indexing with MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,373,closed,2011-11-16 17:15:52+00:00,2011-11-16 19:28:29+00:00,0.0920949074074074,DataFrame constructor when passed a Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,374,closed,2011-11-16 19:36:08+00:00,2011-12-28 22:16:48+00:00,42.11157407407408,Better skiplist data structure implementation in Cython
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,375,closed,2011-11-17 12:21:36+00:00,2011-11-18 06:08:34+00:00,0.7409490740740741,Pivoting on multiple columns causes data loss
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,376,closed,2011-11-17 17:21:21+00:00,2011-11-25 20:21:01+00:00,8.124768518518518,"Enable pass through *args, **kwargs to function in DataFrame.apply"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,377,closed,2011-11-17 17:34:22+00:00,2011-11-17 17:57:48+00:00,0.016273148148148148,mixed type dataframe loses type info
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,378,closed,2011-11-17 18:52:42+00:00,2011-11-18 06:48:05+00:00,0.49679398148148146,Exception Upon Pivoting an Empty DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,379,closed,2011-11-17 22:03:21+00:00,2011-11-22 05:38:32+00:00,4.316099537037037,Allow user to pass level names to swaplevel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,381,closed,2011-11-17 23:39:43+00:00,2011-11-18 06:23:17+00:00,0.2802546296296296,Pass list to values argument in pivot_table
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,382,closed,2011-11-18 00:07:02+00:00,2011-11-23 03:41:21+00:00,5.148831018518519,DataFrame should be more aggressive about trying to aggregate numeric data stored in dtype object
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,383,closed,2011-11-18 06:17:18+00:00,2012-05-14 20:01:58+00:00,178.57268518518518,Pass multiple columns to DataFrameGroupBy.__getitem__
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,384,closed,2011-11-18 07:33:01+00:00,2011-11-23 03:40:33+00:00,4.838564814814815,Test all NA case in min/max functions
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,388,closed,2011-11-18 17:34:38+00:00,2014-03-09 15:19:04+00:00,841.9058564814815,Even more agile reshaping
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,389,closed,2011-11-18 18:59:34+00:00,2011-11-22 18:38:03+00:00,3.9850578703703703,DataFrame.apply returns Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,390,closed,2011-11-18 19:38:38+00:00,2011-11-22 05:14:27+00:00,3.3998726851851853,Result of asfreq should have DateRange index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,391,closed,2011-11-20 02:18:03+00:00,2012-04-26 18:46:25+00:00,158.68636574074074,Add more robust frequency inference function
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,392,closed,2011-11-20 02:27:03+00:00,2011-11-22 05:07:22+00:00,2.1113310185185186,Do converters work for index columns in read_csv?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,393,closed,2011-11-21 18:56:12+00:00,2011-11-22 16:22:29+00:00,0.8932523148148148,Make delevel work with non-MultiIndex with a name
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,394,closed,2011-11-21 18:56:54+00:00,2011-11-22 05:50:21+00:00,0.4537847222222222,.ix[val] discards index names
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,395,closed,2011-11-21 19:00:59+00:00,2012-01-10 00:01:10+00:00,49.20846064814815,Tweak DataFrame formatting to always use same # of digits
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,397,closed,2011-11-22 05:00:20+00:00,2011-11-23 03:40:24+00:00,0.9444907407407407,Partial setting (with more than 1 level specified) with .ix raises exception
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,401,closed,2011-11-22 16:20:05+00:00,2014-05-28 23:12:49+00:00,918.2866203703703,Panel property specifying orientation
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,402,closed,2011-11-22 16:24:19+00:00,2012-05-07 19:43:01+00:00,167.1379861111111,Support things other than column names in DataFrame.set_index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,403,closed,2011-11-22 17:07:04+00:00,2011-11-23 06:12:46+00:00,0.545625,Unstack with an object variable overwrites BlockManager
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,404,closed,2011-11-22 17:37:17+00:00,2018-07-06 19:38:06+00:00,2418.083900462963,Add ignore option to unstack or something like that
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,405,closed,2011-11-23 16:11:30+00:00,2011-11-23 17:07:42+00:00,0.03902777777777778,GroupBy does not handle non-string column labels passed
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,406,closed,2011-11-23 17:26:50+00:00,2012-05-14 15:02:46+00:00,172.89995370370372,Test / handle other dtypes when passing MaskedArray to DataFrame constructor
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,407,closed,2011-11-23 21:10:55+00:00,2012-11-02 14:11:13+00:00,344.7085416666667,"Improve memory usage of read_csv, Python objects take up too much"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,408,closed,2011-11-24 00:53:07+00:00,2011-11-24 02:12:48+00:00,0.05533564814814815,Index name is not properly pickled/unpickled
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,409,closed,2011-11-24 01:52:48+00:00,2012-04-11 03:21:30+00:00,139.06159722222222,"A lot of partial setting stuff doesn't work with .ix, needs testing/work"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,410,closed,2011-11-24 02:08:03+00:00,2013-09-20 16:31:03+00:00,666.5993055555556,Set up some kind of system for testing legacy pickles
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,411,closed,2011-11-24 11:27:35+00:00,2011-11-25 05:50:26+00:00,0.7658680555555556,Panel constructor ignores dtype
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,412,closed,2011-11-24 17:58:54+00:00,2011-12-03 17:51:12+00:00,8.994652777777778,Override Index.astype to prevent bad things from happening
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,413,closed,2011-11-24 19:21:01+00:00,2018-07-06 19:31:39+00:00,2416.007384259259,API: Making plot methods more uniform in their options
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,414,closed,2011-11-24 20:14:15+00:00,2013-11-22 09:52:45+00:00,728.5684027777778,Conditional split/groupby
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,415,closed,2011-11-25 05:30:16+00:00,2012-06-01 20:23:19+00:00,189.6201736111111,Implement equivalent of cut function from base R
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,416,closed,2011-11-25 20:06:03+00:00,2011-11-26 03:09:18+00:00,0.2939236111111111,GroupBy level should pass on level name to result index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,419,closed,2011-11-28 00:25:18+00:00,2011-12-02 21:03:13+00:00,4.859664351851852,DataReader - request to truncate retrieved data to specified dates
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,421,closed,2011-11-28 10:45:38+00:00,2011-12-02 22:01:06+00:00,4.469074074074074,Buglet in groupby when passing function like len with as_index False
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,422,closed,2011-11-28 20:20:20+00:00,2011-12-12 04:38:22+00:00,13.345856481481482,names param in DataFrame.from_records should be called columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,423,closed,2011-11-28 20:31:16+00:00,2011-11-29 00:10:45+00:00,0.15241898148148147,DataFrame.count corner case with empty columns
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,428,closed,2011-12-01 10:43:00+00:00,2011-12-12 02:50:53+00:00,10.672141203703704,add rank and rank correlation methods
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,429,closed,2011-12-02 15:13:10+00:00,2011-12-12 05:06:23+00:00,9.578622685185184,Boolean ops with Series should reindex?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,430,closed,2011-12-02 16:11:55+00:00,2011-12-02 21:17:17+00:00,0.21206018518518518,Enable DataFrame.append to add a single row Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,431,closed,2011-12-02 16:17:55+00:00,2011-12-02 21:02:23+00:00,0.1975462962962963,".ix[row, col] should preserve type"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,432,closed,2011-12-02 16:43:57+00:00,2011-12-02 20:46:17+00:00,0.16828703703703704,Element-wise map does not produce DataFrame in apply
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,433,closed,2011-12-02 16:46:51+00:00,2012-05-02 21:30:45+00:00,152.19715277777777,Add section about development / contributing to the docs
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,434,closed,2011-12-02 20:09:31+00:00,2011-12-02 20:23:30+00:00,0.009710648148148149,Empty series corner case arith bug
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,436,closed,2011-12-02 21:19:57+00:00,2011-12-11 23:15:17+00:00,9.080092592592592,Implement SparseList and SparseArray support data structures
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,437,closed,2011-12-02 21:29:39+00:00,2011-12-06 00:26:55+00:00,3.123101851851852,Fast as possible get_value/put_value methods for Series/DataFrame/Panel
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,438,closed,2011-12-02 21:32:34+00:00,2011-12-09 00:37:58+00:00,6.12875,Methods for inserting values
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,439,closed,2011-12-02 21:37:23+00:00,2011-12-18 21:57:15+00:00,16.013796296296295,Faster conversion of dict of large SparseSeries -> SparseDataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,440,closed,2011-12-02 22:14:57+00:00,2011-12-02 22:48:12+00:00,0.02309027777777778,DataFrame.delevel infer dtypes better
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,441,closed,2011-12-03 17:12:27+00:00,2011-12-08 04:39:42+00:00,4.477256944444444,issue with py2exe
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,443,closed,2011-12-05 02:28:39+00:00,2019-11-18 17:09:33+00:00,2905.611736111111,Add NA handling option to GroupBy
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,444,closed,2011-12-05 04:14:09+00:00,2011-12-12 04:30:56+00:00,7.0116550925925925,More convenient syntax for DataFrame constructor to declare order of columns?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,445,closed,2011-12-05 19:02:41+00:00,2014-08-17 21:24:02+00:00,986.0981597222222,Sparse data structure support for MultiIndex?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,446,closed,2011-12-05 19:05:42+00:00,2011-12-08 04:42:07+00:00,2.400289351851852,Cache DataFrame items in Panel to improve performance
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,447,closed,2011-12-05 19:40:26+00:00,2017-01-25 15:54:32+00:00,1877.843125,DataFrames should have a name attribute.
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,448,closed,2011-12-05 20:34:27+00:00,2013-08-16 19:30:23+00:00,619.9555092592593,Build data structure similar to BlockManager for sparse objects
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,449,closed,2011-12-05 23:35:36+00:00,2012-01-06 05:38:59+00:00,31.252349537037038,Decorator for copying documentation from one function to another
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,451,closed,2011-12-06 14:52:41+00:00,2011-12-08 05:06:53+00:00,1.5931944444444444,DataFrame.unstack() issue when unstacking multiple levels.
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,452,closed,2011-12-06 15:32:31+00:00,2011-12-08 19:50:19+00:00,2.179027777777778,"UnboundLocalError when setting data to a Panel: ""local variable 'mat' referenced before assignment"""
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,454,closed,2011-12-06 16:30:34+00:00,2011-12-12 04:09:23+00:00,5.4852893518518515,Saving Panel with float index to HDFStore fails
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,455,closed,2011-12-06 18:32:19+00:00,2012-01-20 03:53:49+00:00,44.38993055555556,Possible API method for retrieving rows by number
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,456,closed,2011-12-06 20:04:32+00:00,2011-12-08 03:48:17+00:00,1.3220486111111112,DateRange union bug caused by bad DateOffset comparison
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,458,closed,2011-12-07 14:40:22+00:00,2011-12-07 23:32:35+00:00,0.3695949074074074,winXP 32-bit build problems
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,459,closed,2011-12-07 15:29:54+00:00,2014-03-11 01:33:18+00:00,824.4190277777777,DataFrame rendering stylists?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,460,closed,2011-12-07 19:24:05+00:00,2011-12-07 23:32:23+00:00,0.17243055555555556,Master does not compile on windows
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,461,closed,2011-12-07 20:31:37+00:00,2011-12-09 20:10:35+00:00,1.9853935185185185,"Enhance DataFrame.align to work with Series input / index-only option, add axis option"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,462,closed,2011-12-07 23:06:05+00:00,2011-12-12 04:09:43+00:00,4.210856481481481,Enable rolling_corr to take DataFrame + Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,464,closed,2011-12-08 23:13:56+00:00,2012-01-14 20:34:08+00:00,36.88902777777778,Insert DataFrame rows with dict / other interface
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,465,closed,2011-12-09 11:13:43+00:00,2011-12-12 02:58:34+00:00,2.6561458333333334,DataFrame.applymap(func) issue when func returns tuple
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,466,closed,2011-12-09 20:56:39+00:00,2012-04-05 00:28:29+00:00,117.14710648148149,Padding / backfilling for monotonic data
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,467,closed,2011-12-09 23:30:29+00:00,2011-12-10 20:26:45+00:00,0.8724074074074074,Memory leak in 0.6.0
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,468,closed,2011-12-11 23:26:02+00:00,2012-01-06 05:53:33+00:00,25.269108796296297,Optimize DataFrame.append for block structure
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,469,closed,2011-12-11 23:47:42+00:00,2011-12-12 00:52:25+00:00,0.04494212962962963,Need to exclude NA values with dtype=object in stat methods
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,470,closed,2011-12-12 05:34:57+00:00,2016-09-29 22:14:25+00:00,1753.694074074074,Use OpenMP for computing pairwise correlations
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,471,closed,2011-12-12 07:46:39+00:00,2011-12-12 15:30:09+00:00,0.321875,ImportError: No module named sparse.api
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,473,closed,2011-12-12 19:14:18+00:00,2011-12-12 19:56:19+00:00,0.02917824074074074,Issue modifying data in object arrays in DataFrame
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,474,closed,2011-12-12 19:29:36+00:00,2011-12-12 20:17:24+00:00,0.03319444444444444,Add inplace option to DataFrame.consolidate
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,475,closed,2011-12-12 20:45:34+00:00,2011-12-12 20:59:22+00:00,0.009583333333333333,DataFrame constructor bug from single Series with different Index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,476,closed,2011-12-12 21:56:47+00:00,2011-12-29 03:21:12+00:00,16.225289351851853,DataFrame.delevel improvements
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,477,closed,2011-12-12 22:56:57+00:00,2012-01-09 22:40:39+00:00,27.988680555555554,Enable unstack to create Series (currently raises Exception)
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,478,closed,2011-12-12 23:29:44+00:00,2011-12-13 22:28:15+00:00,0.9573032407407407,More helpful error message when DataFrame.plot fails on some column
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,479,closed,2011-12-13 01:43:45+00:00,2012-01-06 05:53:54+00:00,24.173715277777777,Add method for concatenating / appending multiple DataFrames
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,480,closed,2011-12-13 01:53:11+00:00,2014-02-18 01:42:24+00:00,797.9925115740741,Function for flattening MultiIndex
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,481,closed,2011-12-13 02:11:04+00:00,2011-12-13 20:00:31+00:00,0.7426736111111111,Bug: handle MultiIndex names in concatenation step of GroupBy.apply
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,483,closed,2011-12-13 13:41:10+00:00,2012-04-23 16:06:47+00:00,132.10112268518517,should asfreq return future dates as well?
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,484,closed,2011-12-13 18:08:37+00:00,2011-12-13 19:36:02+00:00,0.06070601851851852,Type inference with list of lists in DataFrame constructor
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,486,closed,2011-12-14 09:48:57+00:00,2011-12-15 17:22:57+00:00,1.3152777777777778,exception joining dataframes with different datatypes
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,487,closed,2011-12-14 16:48:19+00:00,2011-12-15 04:23:28+00:00,0.4827430555555556,nanops on datetime objects failing
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,488,closed,2011-12-14 18:56:00+00:00,2011-12-15 17:38:22+00:00,0.9460879629629629,Exception calling to_string on empty Series
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,489,closed,2011-12-14 18:59:52+00:00,2011-12-15 04:40:17+00:00,0.40306712962962965,Series.to_string Always Prints Length
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,490,closed,2011-12-14 19:49:16+00:00,2011-12-15 20:13:46+00:00,1.0170138888888889,can't print embedded ndarray
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,491,closed,2011-12-14 23:13:22+00:00,2011-12-15 04:05:07+00:00,0.20260416666666667,Cannot instantiate DataFrame with
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,492,closed,2011-12-15 08:52:27+00:00,2011-12-15 17:53:24+00:00,0.3756597222222222,Saving DataFrame with tuple index to HDFStore fails
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,495,closed,2011-12-15 15:46:25+00:00,2011-12-15 17:04:54+00:00,0.054502314814814816,invalid dtype access crashes interpreter (segfault)
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,496,closed,2011-12-16 01:33:24+00:00,2011-12-17 21:32:20+00:00,1.8325925925925926,Cython python function aggregation optimization
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,497,closed,2011-12-16 18:35:02+00:00,2011-12-18 05:29:59+00:00,1.4548263888888888,Better error messages
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,498,closed,2011-12-16 21:56:17+00:00,2011-12-18 07:35:51+00:00,1.4024768518518518,Handle differently-indexed output in DataFrame.apply
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,499,closed,2011-12-16 22:00:11+00:00,2016-09-29 22:09:57+00:00,1749.0067824074074,"Clean up legacy issues in MultiIndex, have to break pickles"
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,500,closed,2011-12-16 22:20:41+00:00,2011-12-17 18:03:57+00:00,0.8217129629629629,Adding DataFrames with offsets yields naive index
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,501,closed,2011-12-17 17:38:00+00:00,2011-12-17 18:01:28+00:00,0.016296296296296295,Handle passing Index.name in union
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,502,closed,2011-12-19 04:26:17+00:00,2012-05-12 18:30:31+00:00,145.58627314814814,Add R-like match function to API
+pandas-dev/pandas,2010-08-24T01:37:33Z,Python,503,closed,2011-12-19 17:55:28+00:00,2011-12-20 03:19:41+00:00,0.3918171296296296,Master does not compile with MSVC: cannot find stdint.h

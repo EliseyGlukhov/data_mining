@@ -1,0 +1,354 @@
+{
+  "name": "lab3",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/pandas-dev/pandas/issues",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "state",
+              "value": "all"
+            },
+            {
+              "name": "per_page",
+              "value": "100"
+            },
+            {
+              "name": "sort",
+              "value": "created"
+            },
+            {
+              "name": "direction",
+              "value": "asc"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {}
+          },
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              },
+              "limitPagesFetched": true,
+              "maxRequests": 5
+            }
+          }
+        }
+      },
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        128,
+        608
+      ],
+      "id": "5065df28-56cf-46e1-9c8f-f2edeed9bd20",
+      "typeVersion": 4.5
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "9a6ad63a-6fe1-4848-84a9-d594a299b710",
+              "leftValue": "={{ $json.message }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notExists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "If",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        336,
+        608
+      ],
+      "id": "ff3cd8f6-d2c1-4de4-bf85-b33fddf8ff41",
+      "typeVersion": 2.3
+    },
+    {
+      "parameters": {
+        "jsCode": "console.log(\"GitHub message is empty!\");"
+      },
+      "name": "Code in JavaScript",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        544,
+        480
+      ],
+      "id": "06a9fae2-4022-4eac-bb6e-ef951b5b7dbd",
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "errorMessage": "={{ $json.error }}"
+      },
+      "name": "Stop and Error",
+      "type": "n8n-nodes-base.stopAndError",
+      "position": [
+        720,
+        480
+      ],
+      "id": "ee067d7e-6e70-4d16-b362-11062d77318b",
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "number",
+        "include": "selectedOtherFields",
+        "fieldsToInclude": "number, state, created_at, closed_at, title",
+        "options": {}
+      },
+      "name": "Split Out",
+      "type": "n8n-nodes-base.splitOut",
+      "position": [
+        544,
+        720
+      ],
+      "id": "39f63530-cf26-4c47-a03f-81f3a8131f34",
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1",
+              "name": "issue_id",
+              "value": "={{ $json.number }}",
+              "type": "number"
+            },
+            {
+              "id": "3",
+              "name": "issue_state",
+              "value": "={{ $json.state }}",
+              "type": "string"
+            },
+            {
+              "id": "9eb5fb10-b58c-4af3-82b8-3c4d42add23a",
+              "name": "issue_created_at",
+              "value": "={{ $json.created_at }}",
+              "type": "string"
+            },
+            {
+              "id": "15703ee5-8362-4672-b247-9c1e1b746b0b",
+              "name": "issue_closed_at",
+              "value": "={{ $json.closed_at }}",
+              "type": "string"
+            },
+            {
+              "id": "d8c1b954-00aa-4ec5-8dcb-1ec9a1fd41f3",
+              "name": "lifetime_hours",
+              "value": "={{ $json.closed_at ?  Math.ceil($json.closed_at.toDateTime().diffTo($json.created_at.toDateTime(), 'hours')) : null }}",
+              "type": "number"
+            },
+            {
+              "id": "d92d624f-64a5-479d-848c-cbab8fc57e8e",
+              "name": "issue_title",
+              "value": "={{ $json.title }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        720,
+        720
+      ],
+      "id": "6f32f789-ead9-4c3a-8595-21e8df3ba189",
+      "typeVersion": 3.5
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Convert to File",
+      "type": "n8n-nodes-base.convertToFile",
+      "position": [
+        912,
+        720
+      ],
+      "id": "817218fc-c7d2-4b58-83a7-de3cba6e9db2",
+      "typeVersion": 1.1
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 4
+            }
+          ]
+        }
+      },
+      "name": "Schedule Trigger1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        -80,
+        608
+      ],
+      "id": "4420ca2a-913e-43ad-bf51-45d5f911b6b6",
+      "typeVersion": 1.4
+    },
+    {
+      "parameters": {
+        "name": "nocode_result.csv",
+        "driveId": {
+          "__rl": true,
+          "value": "My Drive",
+          "mode": "list",
+          "cachedResultName": "My Drive",
+          "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1by3AQBd4IoZT-ruGu_Eq_s0PldyYd-FN",
+          "mode": "list",
+          "cachedResultName": "lab3",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1by3AQBd4IoZT-ruGu_Eq_s0PldyYd-FN"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1088,
+        720
+      ],
+      "id": "5d1e0286-377b-441e-8076-cbe977cbeb3c",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "JGRvkoGld3i4q4qE",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Stop and Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "5b23b71b-7fa9-4853-8cd8-50e05fe365b1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c3ce86ecd1da5caee42ab81a83086df4d108be15613b605f03b14133d2e4f52a"
+  },
+  "nodeGroups": [],
+  "id": "9aHPMgUQOX5j2dLN",
+  "tags": []
+}

@@ -1,0 +1,6 @@
+page,url,params,status_code,records_count,duration_sec,timestamp,rate_limit_remaining,rate_limit_reset
+1,https://api.github.com/repos/pandas-dev/pandas/issues,"{""state"": ""all"", ""per_page"": 100, ""sort"": ""created"", ""direction"": ""asc""}",200,100,1.109,2026-10-06T15:50:35.781439+00:00,4999,1791305435
+2,https://api.github.com/repositories/858127/issues?state=all&per_page=100&sort=created&direction=asc&after=Y3Vyc29yOnYyOpLPAAABMdkhI8jOABXAVg%3D%3D&page=2,{},200,100,0.859,2026-10-06T15:50:37.657388+00:00,4998,1791305435
+3,https://api.github.com/repositories/858127/issues?state=all&per_page=100&sort=created&direction=asc&after=Y3Vyc29yOnYyOpLPAAABMt4857DOABweNA%3D%3D&page=3,{},200,100,0.937,2026-10-06T15:50:39.598466+00:00,4997,1791305435
+4,https://api.github.com/repositories/858127/issues?state=all&per_page=100&sort=created&direction=asc&after=Y3Vyc29yOnYyOpLPAAABM0XBk5DOAB-Pmw%3D%3D&page=4,{},200,100,0.766,2026-10-06T15:50:41.366920+00:00,4996,1791305435
+5,https://api.github.com/repositories/858127/issues?state=all&per_page=100&sort=created&direction=asc&after=Y3Vyc29yOnYyOpLPAAABM8w-vsDOACNnGA%3D%3D&page=5,{},200,100,0.906,2026-10-06T15:50:43.270617+00:00,4995,1791305435
