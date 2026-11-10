@@ -1,0 +1,669 @@
+{
+  "name": "lab5",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const html = item.json.categoryHtml || '';\n  const urlMatch = html.match(/href=\"([^\"]+)\"/);\n  const nameMatch = html.match(/>([^<]+)<\\/a>/);\n  \n  return {\n    json: {\n      categoryUrl: urlMatch ? urlMatch[1] : '',\n      categoryName: nameMatch ? nameMatch[1].trim() : ''\n    }\n  };\n});"
+      },
+      "id": "fd6e35c9-05ac-45a6-8a81-abcf280189d0",
+      "name": "Code: Format Categories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 6
+            }
+          ]
+        }
+      },
+      "id": "43fabec8-9ea6-4743-9f07-53b336128aa5",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -1104,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://books.toscrape.com/",
+        "options": {}
+      },
+      "id": "0c518c15-2614-4576-acc0-514c1e82865a",
+      "name": "HTTP Request: Main Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -912,
+        816
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "categoryHtml",
+              "cssSelector": "div.side_categories > ul > li > ul > li",
+              "returnValue": "html",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ce6c827e-de2a-4f34-ab48-49545c78135b",
+      "name": "HTML: Extract Categories",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        -704,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "categoryHtml",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "id": "20eaea5d-1cb9-4af1-ae65-583adc07c96d",
+      "name": "Split Out: Categories",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -512,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "c355b0d3-f1f2-482b-be24-169340b98676",
+      "name": "Loop Over Items: Categories",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -128,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nconst final = staticData.allBooks || [];\nstaticData.allBooks = [];\nreturn final.map(item => ({ json: item }));"
+      },
+      "id": "1ac1e4d2-cb39-49e4-882a-e9126271fb48",
+      "name": "Code: Final Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        64,
+        704
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "toFile",
+        "fileFormat": "csv",
+        "options": {
+          "fileName": "nocode_result.csv"
+        }
+      },
+      "id": "4512a87a-9aae-4ec9-b883-813da20c6f06",
+      "name": "Convert to CSV",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "typeVersion": 1,
+      "position": [
+        288,
+        704
+      ]
+    },
+    {
+      "parameters": {
+        "fileName": "/home/node/.n8n/data/nocode_result.csv",
+        "options": {}
+      },
+      "id": "fd71ea68-efe2-403d-bfa6-2651ff927975",
+      "name": "Write Binary File: nocode_result.csv",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [
+        512,
+        704
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nstaticData.currentCategoryBooks = [];\n\nconst cat = $json;\nconst rawUrl = cat.categoryUrl || '';\ncat.categoryUrl = 'https://books.toscrape.com/' + rawUrl;\n\nreturn [{ json: cat }];"
+      },
+      "id": "0739622f-6099-4693-be66-1f477cd53e2c",
+      "name": "Code: Prepare Category URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        64,
+        912
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.categoryUrl }}",
+        "options": {}
+      },
+      "id": "cb93e8ee-1056-401b-9500-6716add7a0ed",
+      "name": "HTTP Request: Category Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        288,
+        912
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "bookUrls",
+              "cssSelector": "article.product_pod h3 a",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            },
+            {
+              "key": "nextPageUrl",
+              "cssSelector": "li.next a",
+              "returnValue": "attribute",
+              "attribute": "href"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6775c216-710d-44b3-add0-1ccb7db86174",
+      "name": "HTML: Extract Book Links & Next Page",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        512,
+        912
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nif (!staticData.currentCategoryBooks) staticData.currentCategoryBooks = [];\n\nconst categoryName = $('Loop Over Items: Categories').first().json.categoryName;\nconst bookUrls = $json.bookUrls || [];\n\nbookUrls.forEach(url => {\n  let absoluteUrl = url;\n  if (!absoluteUrl.startsWith('http')) {\n    if (absoluteUrl.includes('../')) {\n      let cleanPath = absoluteUrl.replace(/^(\\.\\.\\/)+/, '');\n      absoluteUrl = 'https://books.toscrape.com/catalogue/' + cleanPath;\n    } else {\n      absoluteUrl = 'https://books.toscrape.com/' + absoluteUrl;\n    }\n  }\n  staticData.currentCategoryBooks.push({ bookUrl: absoluteUrl, categoryName: categoryName });\n});\n\nlet rawNextPage = $json.nextPageUrl;\nif (Array.isArray(rawNextPage)) rawNextPage = rawNextPage[0];\n\nlet nextPageUrl = '';\nlet hasNextPage = false;\n\nif (rawNextPage && typeof rawNextPage === 'string') {\n    let baseUrl = 'https://books.toscrape.com/';\n    try {\n        baseUrl = $('Code: Prepare Category URL').first().json.categoryUrl;\n    } catch (e) {}\n\n    const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);\n    nextPageUrl = baseDir + rawNextPage;\n    hasNextPage = true;\n}\n\nreturn [{ json: { nextPageUrl: nextPageUrl, hasNextPage: hasNextPage } }];"
+      },
+      "id": "7092f6de-8e88-413a-ae3e-d86323d4d010",
+      "name": "Code: Accumulate Links & Check Next",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        736,
+        912
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "={{ $json.hasNextPage }}",
+            "typeValidation": "strict",
+            "version": 2,
+            "rightValue": ""
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "condition-next-page",
+              "leftValue": "={{ $json.hasNextPage }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d682a680-d6fe-4965-87d7-e3ee2e7a489f",
+      "name": "IF: Has Next Page",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        960,
+        912
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "assign-category-url",
+              "name": "categoryUrl",
+              "value": "={{ $json.nextPageUrl }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f43673b3-6e8d-475f-b212-8a60061bde13",
+      "name": "Set: Next Page URL",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1136,
+        816
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nconst books = staticData.currentCategoryBooks || [];\nstaticData.currentCategoryBooks = [];\nreturn books.map(b => ({ json: b }));"
+      },
+      "id": "79d7358c-91b9-4913-807d-85d22fc44fc1",
+      "name": "Code: Get Category Books",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        1104
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "bookUrl",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "id": "f25e1b7e-2508-4a92-bb97-7a004e56fffc",
+      "name": "Split Out: Books",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1360,
+        1104
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.bookUrl }}",
+        "options": {}
+      },
+      "id": "daedd466-7a39-4974-ab3e-243a8541f278",
+      "name": "HTTP Request: Book Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1568,
+        1184
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "title",
+              "cssSelector": "div.product_main > h1"
+            },
+            {
+              "key": "upc",
+              "cssSelector": "table.table-striped tr:nth-child(1) td"
+            },
+            {
+              "key": "priceExclTax",
+              "cssSelector": "table.table-striped tr:nth-child(3) td"
+            },
+            {
+              "key": "availability",
+              "cssSelector": "table.table-striped tr:nth-child(6) td"
+            },
+            {
+              "key": "numberOfReviews",
+              "cssSelector": "table.table-striped tr:nth-child(7) td"
+            },
+            {
+              "key": "category",
+              "cssSelector": "ul.breadcrumb li:nth-child(3) a"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f992eec3-8f06-4f00-83ad-964ca60db3b4",
+      "name": "HTML: Extract Book Details",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        1792,
+        1184
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const j = item.json;\n  const price = parseFloat((j.priceExclTax || '').replace(/[^0-9.]/g, ''));\n  const reviews = parseInt((j.numberOfReviews || '0').replace(/[^0-9]/g, ''), 10);\n  const availability = (j.availability || '').toLowerCase().includes('in stock');\n\n  return {\n    json: {\n      upc: j.upc || '',\n      category: j.category || '',\n      title: j.title.replace(/\\s+/g, ' ').trim() || '',\n      priceExclTax: isNaN(price) ? null : price,\n      availability: availability,\n      numberOfReviews: isNaN(reviews) ? 0 : reviews\n    }\n  };\n});"
+      },
+      "id": "06281bab-1b44-4413-94ce-75b49537b27a",
+      "name": "Code: Typing & Cleaning",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2016,
+        1184
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const staticData = $getWorkflowStaticData('global');\nif (!staticData.allBooks) staticData.allBooks = [];\nstaticData.allBooks.push(...items.map(i => i.json));\nreturn items;"
+      },
+      "id": "e1813fb8-8d33-4d80-93d4-22686e88b72d",
+      "name": "Code: Accumulate Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2240,
+        1184
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { status: \"next_category\" } }];"
+      },
+      "id": "5e397faa-b171-4095-a4d8-c362d5bb7bd7",
+      "name": "Code: Next Category",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2448,
+        1184
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Code: Format Categories": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items: Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request: Main Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request: Main Page": {
+      "main": [
+        [
+          {
+            "node": "HTML: Extract Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML: Extract Categories": {
+      "main": [
+        [
+          {
+            "node": "Split Out: Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out: Categories": {
+      "main": [
+        [
+          {
+            "node": "Code: Format Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items: Categories": {
+      "main": [
+        [
+          {
+            "node": "Code: Final Output",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code: Prepare Category URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Final Output": {
+      "main": [
+        [
+          {
+            "node": "Convert to CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to CSV": {
+      "main": [
+        [
+          {
+            "node": "Write Binary File: nocode_result.csv",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Prepare Category URL": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request: Category Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request: Category Page": {
+      "main": [
+        [
+          {
+            "node": "HTML: Extract Book Links & Next Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML: Extract Book Links & Next Page": {
+      "main": [
+        [
+          {
+            "node": "Code: Accumulate Links & Check Next",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Accumulate Links & Check Next": {
+      "main": [
+        [
+          {
+            "node": "IF: Has Next Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF: Has Next Page": {
+      "main": [
+        [
+          {
+            "node": "Set: Next Page URL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code: Get Category Books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set: Next Page URL": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request: Category Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Get Category Books": {
+      "main": [
+        [
+          {
+            "node": "Split Out: Books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out: Books": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request: Book Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request: Book Page": {
+      "main": [
+        [
+          {
+            "node": "HTML: Extract Book Details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML: Extract Book Details": {
+      "main": [
+        [
+          {
+            "node": "Code: Typing & Cleaning",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Typing & Cleaning": {
+      "main": [
+        [
+          {
+            "node": "Code: Accumulate Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Accumulate Data": {
+      "main": [
+        [
+          {
+            "node": "Code: Next Category",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Next Category": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items: Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "eb4b7534-4a25-4235-a4a7-ea91eff9e7c0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5fd57cb66a45c2cc9426de1d1fadc618adad319ac5bc685bc6371fd37972f659"
+  },
+  "nodeGroups": [],
+  "id": "XgiLl1QTJZUId2US",
+  "tags": []
+}

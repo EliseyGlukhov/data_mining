@@ -1,0 +1,6 @@
+scrapy
+jupyter
+notebook
+pandas
+matplotlib
+pydantic
