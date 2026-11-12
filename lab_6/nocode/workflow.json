@@ -1,0 +1,388 @@
+{
+  "name": "lab6",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -560,
+        -432
+      ],
+      "id": "f4c60803-4386-45db-a03d-3d5ba42f931e"
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = [\n  { isbn: '978-3-16-148410-0', title: '  Война и мир  ', author: '  лев толстой ', price: '1200.50', source: 'html_catalog' },\n  { isbn: '978-3-16-148410-0', title: 'Война и мир', author: 'Лев Толстой', price: '1200.50', source: 'html_catalog' },\n  { isbn: '978-5-04-118480-3', title: 'Преступление и наказание', author: 'Фёдор Достоевский', price: '890', source: 'api_books' },\n  { isbn: '978-5-04-118480-3', title: 'Преступление и наказание', author: 'Фёдор Достоевский', price: '890', source: 'api_books' },\n  { isbn: '978-5-17-090200-2', title: 'Мастер и Маргарита', author: 'Михаил Булгаков', price: '  750 ', source: 'html_catalog' },\n  { isbn: '', title: 'Анна Каренина', author: 'Лев Толстой', price: '600', source: 'html_catalog' },\n  { isbn: '978-5-699-12014-7', title: 'Тихий Дон', author: 'Михаил Шолохов', price: 'abc', source: 'api_books' },\n  { isbn: '978-5-389-08991-3', title: ' 1984 ', author: 'Джордж Оруэлл', price: '550', source: 'api_books' },\n  { isbn: '978-5-389-08991-3', title: '1984', author: 'Джордж Оруэлл', price: '550', source: 'api_books' },\n  { isbn: '978-5-17-118565-7', title: 'Гарри Поттер и философский камень', author: 'Джоан Роулинг', price: '980', source: 'html_catalog' },\n  { isbn: '978-5-17-118565-7', title: 'Гарри Поттер и философский камень', author: 'Джоан Роулинг', price: '980', source: 'html_catalog' },\n  { isbn: '978-5-04-155212-1', title: 'Три товарища', author: 'Эрих Мария Ремарк', price: '720', source: 'api_books' },\n  { isbn: '', title: '', author: '', price: '', source: 'html_catalog' },\n  { isbn: '978-5-17-087744-7', title: 'Собачье сердце', author: 'Михаил Булгаков', price: '430', source: 'html_catalog' },\n  { isbn: '978-5-17-087744-7', title: 'Собачье сердце', author: 'Михаил Булгаков', price: '430', source: 'html_catalog' },\n  { isbn: '978-5-04-102456-8', title: 'Дюна', author: 'Фрэнк Герберт', price: '1100', source: 'api_books' },\n  { isbn: '978-5-04-102456-8', title: 'Дюна', author: 'Фрэнк Герберт', price: '1100', source: 'api_books' },\n  { isbn: '978-5-17-080429-1', title: 'Мёртвые души', author: 'Николай Гоголь', price: '640', source: 'html_catalog' },\n  { isbn: '978-5-17-080429-1', title: 'Мёртвые души', author: 'Николай Гоголь', price: '640', source: 'html_catalog' },\n  { isbn: '978-5-389-06237-5', title: 'Над пропастью во ржи', author: 'Джером Сэлинджер', price: '520', source: 'api_books' },\n  { isbn: '978-5-389-06237-5', title: 'Над пропастью во ржи', author: 'Джером Сэлинджер', price: '520', source: 'api_books' },\n  { isbn: '978-5-04-096234-2', title: 'Игра престолов', author: 'Джордж Мартин', price: '1450', source: 'html_catalog' },\n  { isbn: '978-5-04-096234-2', title: 'Игра престолов', author: 'Джордж Мартин', price: '1450', source: 'html_catalog' },\n  { isbn: '978-5-17-099101-3', title: 'Пикник на обочине', author: 'Аркадий Стругацкий', price: '480', source: 'api_books' },\n  { isbn: '978-5-17-099101-3', title: 'Пикник на обочине', author: 'Аркадий Стругацкий', price: '480', source: 'api_books' },\n  { isbn: '978-5-04-113312-2', title: 'Цветы для Элджернона', author: 'Дэниел Киз', price: '390', source: 'html_catalog' },\n  { isbn: '978-5-04-113312-2', title: 'Цветы для Элджернона', author: 'Дэниел Киз', price: '390', source: 'html_catalog' },\n  { isbn: '978-5-17-134567-8', title: 'Портрет Дориана Грея', author: 'Оскар Уайльд', price: '510', source: 'api_books' },\n  { isbn: '978-5-17-134567-8', title: 'Портрет Дориана Грея', author: 'Оскар Уайльд', price: '510', source: 'api_books' },\n  { isbn: '978-5-04-099876-1', title: 'Гордость и предубеждение', author: 'Джейн Остин', price: '440', source: 'html_catalog' },\n  { isbn: '978-5-04-099876-1', title: 'Гордость и предубеждение', author: 'Джейн Остин', price: '440', source: 'html_catalog' },\n  { isbn: '978-5-17-123456-7', title: 'Убить пересмешника', author: 'Харпер Ли', price: '560', source: 'api_books' },\n  { isbn: '978-5-17-123456-7', title: 'Убить пересмешника', author: 'Харпер Ли', price: '560', source: 'api_books' },\n  { isbn: '978-5-04-111222-3', title: 'Великий Гэтсби', author: 'Фрэнсис Скотт Фицджеральд', price: '470', source: 'html_catalog' },\n  { isbn: '978-5-04-111222-3', title: 'Великий Гэтсби', author: 'Фрэнсис Скотт Фицджеральд', price: '470', source: 'html_catalog' },\n  { isbn: '978-5-17-133333-9', title: 'Старик и море', author: 'Эрнест Хемингуэй', price: '330', source: 'api_books' }\n];\nreturn raw.map(item => ({ json: item }));"
+      },
+      "name": "Generate 35 Raw Records",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -368,
+        -432
+      ],
+      "id": "fcb9d20e-5a04-40c6-b4a0-ad19721b2451"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst seen = new Set();\nconst result = [];\n\nfor (const item of items) {\n    const j = item.json;\n    \n    const isbn = String(j.isbn || '').replace(/[\\s-]/g, '');\n    const title = String(j.title || '').trim().replace(/\\s+/g, ' ');\n    const author = String(j.author || '').trim().replace(/\\s+/g, ' ');\n    const source = String(j.source || '');\n    \n    let price = parseFloat(j.price);\n    if (isNaN(price) || price <= 0) {\n        price = 0; \n    }\n    \n    if (isbn) {\n        if (!seen.has(isbn)) {\n            seen.add(isbn);\n            result.push({ json: { isbn, title, author, price, source } });\n        }\n    } else {\n        result.push({ json: { isbn, title, author, price, source } });\n    }\n}\n\nreturn result;"
+      },
+      "name": "Normalize & Deduplicate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -160,
+        -432
+      ],
+      "id": "36b6fb89-4794-450d-8a39-75711e84ad75"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "1",
+              "leftValue": "={{ $json.isbn }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            },
+            {
+              "id": "2",
+              "leftValue": "={{ $json.title }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            },
+            {
+              "id": "3",
+              "leftValue": "={{ $json.author }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            },
+            {
+              "id": "4",
+              "leftValue": "={{ $json.price }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "IF Valid Record",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        48,
+        -432
+      ],
+      "id": "87f02fe3-cce2-46f8-9b1d-b04f7c48a334"
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "dataTableId": {
+          "__rl": true,
+          "value": "lheMhQT49iHORvzX",
+          "mode": "list",
+          "cachedResultName": "books",
+          "cachedResultUrl": "/projects/ugbGjNN882TNLRWl/datatables/lheMhQT49iHORvzX"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "isbn",
+              "keyValue": "={{ json.isbn }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "isbn",
+              "displayName": "isbn",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "title",
+              "displayName": "title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "author",
+              "displayName": "author",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "price",
+              "displayName": "price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "source",
+              "displayName": "source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false,
+          "values": [
+            {
+              "column": "isbn",
+              "value": "={{ $json.isbn }}"
+            },
+            {
+              "column": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "column": "author",
+              "value": "={{ $json.author }}"
+            },
+            {
+              "column": "price",
+              "value": "={{ $json.price }}"
+            },
+            {
+              "column": "source",
+              "value": "={{ $json.source }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Upsert into Books Data Table",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -528
+      ],
+      "id": "2c28e013-8c75-4708-b034-46a3aea01cf9"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ea827e4-8b5c-448b-922a-ebe965c31acb",
+              "name": "payload",
+              "value": "={{ JSON.stringify($json) }}",
+              "type": "string"
+            },
+            {
+              "id": "8f02be64-0f27-45a4-9ef5-61a6b14df314",
+              "name": "reason",
+              "value": "={{ !$json.isbn ? 'empty isbn' : (!$json.title ? 'empty title' : (!$json.author ? 'empty author' : 'invalid price')) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Prepare Reject Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        -336
+      ],
+      "id": "0a693932-a6c7-4bec-bad4-c56a623490b2"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "oVroL89lCLsPFOck",
+          "mode": "list",
+          "cachedResultName": "regects",
+          "cachedResultUrl": "/projects/ugbGjNN882TNLRWl/datatables/oVroL89lCLsPFOck"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "payload",
+              "displayName": "payload",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "reason",
+              "displayName": "reason",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false,
+          "values": [
+            {
+              "column": "payload",
+              "value": "={{ $json.payload }}"
+            },
+            {
+              "column": "reason",
+              "value": "={{ $json.reason }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Insert into Rejects Data Table",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -336
+      ],
+      "id": "55794c0b-9211-491d-a644-ade0c7147c42"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Generate 35 Raw Records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate 35 Raw Records": {
+      "main": [
+        [
+          {
+            "node": "Normalize & Deduplicate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize & Deduplicate": {
+      "main": [
+        [
+          {
+            "node": "IF Valid Record",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Valid Record": {
+      "main": [
+        [
+          {
+            "node": "Upsert into Books Data Table",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Reject Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Reject Data": {
+      "main": [
+        [
+          {
+            "node": "Insert into Rejects Data Table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "786bb7ca-e7da-489a-8c64-58adc123678d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5fd57cb66a45c2cc9426de1d1fadc618adad319ac5bc685bc6371fd37972f659"
+  },
+  "nodeGroups": [],
+  "id": "1G1v59qulqPsg6Dm",
+  "tags": []
+}

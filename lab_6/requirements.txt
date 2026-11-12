@@ -1,0 +1,7 @@
+pandas
+pyarrow
+pydantic
+requests
+beautifulsoup4
+matplotlib
+duckdb

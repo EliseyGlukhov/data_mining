@@ -1,0 +1,39 @@
+{
+  "counters": {
+    "books_seen": 350,
+    "authors_seen": 195,
+    "decode_errors": 0
+  },
+  "counts_clean": {
+    "books": 341,
+    "authors": 195
+  },
+  "rejected_total": 0,
+  "reject_breakdown": {},
+  "log": [
+    {
+      "step": 5,
+      "key": "book_key",
+      "before": 350,
+      "after": 344,
+      "removed": 6,
+      "note": "по бизнес-ключу, keep=last"
+    },
+    {
+      "step": 5.1,
+      "key": "title+author_key",
+      "before": 344,
+      "after": 341,
+      "removed": 3,
+      "note": "near-dupes"
+    },
+    {
+      "step": 5,
+      "key": "author_key",
+      "before": 195,
+      "after": 195,
+      "removed": 0,
+      "note": "по бизнес-ключу, keep=last"
+    }
+  ]
+}

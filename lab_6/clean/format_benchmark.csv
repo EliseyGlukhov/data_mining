@@ -1,0 +1,4 @@
+format,size_kb,read_full_s,read_2cols_s,isbn_type,collected_at_type,isbn_leading_zero
+CSV,87.87109375,0.004771600000822218,0.002021300002525095,object,object,lost
+JSONL,160.5517578125,0.0027031999998143874,0.002573800000391202,object,object,kept (string)
+Parquet,37.625,0.002511600003344938,0.0013710999992326833,string,"datetime64[ns, UTC]",kept (string)
